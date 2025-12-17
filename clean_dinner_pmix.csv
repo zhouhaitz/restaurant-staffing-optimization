@@ -1,0 +1,105 @@
+Menu,Menu group,Item,Sales Category,Qty sold,Daily Avg Qty Sold
+DINNER,Botonas,Chips w/ Guacamole,Food,2112.0,35.2
+DINNER,Masa,Fish Tacos,Food,1111.0,18.516666666666666
+DINNER,Botonas,CHIP REFILL,Food,920.0,15.333333333333334
+DINNER,Masa,Chicken Tamal,Food,624.0,10.4
+DINNER,Masa,Pork Enchilada,Food,549.0,9.15
+DINNER,Antojitos,White Shrimp Ceviche,Food,546.0,9.1
+DINNER,Antojitos,Ensalada Picada,Food,512.0,8.533333333333333
+DINNER,Antojitos,Chile Relleno,Food,446.0,7.433333333333334
+DINNER,Botonas,Fresh Tortilla Chips,Food,364.0,6.066666666666666
+DINNER,Antojitos,Bitter Greens Escarole,Food,357.0,5.95
+DINNER,Masa,Tlayuda,Food,352.0,5.866666666666666
+DINNER,Dessert,Oaxacan Chocolate Budin,Food,338.0,5.633333333333334
+DINNER,Masa,Mushroom Quesadilla,Food,314.0,5.233333333333333
+DINNER,Dessert,Flan,Food,304.0,5.066666666666666
+DINNER,Botonas,Jicama & Cucumber,Food,288.0,4.8
+DINNER,Masa,Duck Enchiladas,Food,261.0,4.35
+DINNER,Masa,Combo Tacos,Food,256.0,4.266666666666667
+DINNER,Masa,Sweet Potato Tacos,Food,253.0,4.216666666666667
+DINNER,Plato Fuerte,Spit-Roasted Whole Chicken,Food,245.0,4.083333333333333
+DINNER,Botonas,Papas Fritas,Food,239.0,3.9833333333333334
+DINNER,Antojitos,Hamachi Crudo,Food,234.0,3.9
+DINNER,Sides,Brussels sprouts & autumn squash,Food,221.0,3.683333333333333
+DINNER,Antojitos,Wood Grilled Chicken Livers,Food,219.0,3.65
+DINNER,Sides,Rice,Food,218.0,3.6333333333333333
+DINNER,Plato Fuerte,Wagyu Flat Iron Steak,Food,193.0,3.216666666666667
+DINNER,Masa,Flautas,Food,190.0,3.1666666666666665
+DINNER,Masa,Chicken Quesadilla,Food,188.0,3.1333333333333333
+DINNER,Plato Fuerte,Mixiote de Pollo,Food,178.0,2.966666666666667
+DINNER,Antojitos,Soup,Food,178.0,2.966666666666667
+DINNER,Masa,Carnitas Tacos,Food,173.0,2.8833333333333333
+DINNER,Antojitos,Beef & Pork Albóndigas En Adobo,Food,165.0,2.75
+DINNER,Sides,Midnight Black Beans De Olla,Food,163.0,2.716666666666667
+DINNER,Masa,Triple Tacos,Food,158.0,2.6333333333333333
+DINNER,Masa,Veggie Tamal,Food,155.0,2.5833333333333335
+DINNER,Botonas,Side Guac,Food,153.0,2.55
+DINNER,Antojitos,Early girl tomatoes,Food,152.0,2.533333333333333
+DINNER,Sides,Mixed Baby Lettuces,Food,141.0,2.35
+DINNER,Dessert,Arroz Con Leche,Food,129.0,2.15
+DINNER,Masa,Butternut Squash Enchilada,Food,128.0,2.1333333333333333
+DINNER,Sides,Grilled Corn On The Cob,Food,127.0,2.1166666666666667
+DINNER,Botonas,3 Salsa Refill,Food,120.0,2.0
+DINNER,Masa,Empanadas,Food,117.5,1.9583333333333333
+DINNER,Masa,Shrimp Quesadilla,Food,114.0,1.9
+DINNER,Masa,Barbacoa Tacos,Food,106.0,1.7666666666666666
+DINNER,Sides,Pinquito Beans Refritos,Food,104.0,1.7333333333333334
+DINNER,Botonas,Escabeche De Verduras,Food,99.0,1.65
+DINNER,Botonas,Side of Tortillas,Food,98.0,1.6333333333333333
+DINNER,Masa,Beef Barbacoa Quesadilla,Food,95.0,1.5833333333333333
+DINNER,Plato Fuerte,Pork Spareribs,Food,94.0,1.5666666666666667
+DINNER,Masa,Carne Asada Tacos,Food,90.0,1.5
+DINNER,Masa,Tinga Tacos,Food,89.0,1.4833333333333334
+DINNER,Masa,Red Squash Quesadilla,Food,87.0,1.45
+DINNER,Masa,Turkey Enchilada,Food,85.0,1.4166666666666667
+DINNER,Dessert,Churro Bites,Food,83.0,1.3833333333333333
+DINNER,Masa,Single Taco,Food,82.0,1.3666666666666667
+DINNER,Masa,Pibil Tacos,Food,72.0,1.2
+DINNER,Masa,Rabbit Tinga Quesadilla,Food,71.0,1.1833333333333333
+DINNER,Masa,Pork Tamal,Food,70.0,1.1666666666666667
+DINNER,Sides,Braised Collard Greens,Food,69.0,1.15
+DINNER,Sides,Pinquinto Beans whole,Food,59.0,0.9833333333333333
+DINNER,Masa,Beef Cheek Tacos,Food,54.0,0.9
+DINNER,Plato Fuerte,Pork Shoulder,Food,53.0,0.8833333333333333
+DINNER,Masa,Chile Quesadilla,Food,49.0,0.8166666666666667
+DINNER,Plato Fuerte,Lamb Chop,Food,48.0,0.8
+DINNER,Masa,Lamb Quesadilla,Food,47.0,0.7833333333333333
+DINNER,Masa,Cheese Quesadilla,Food,42.0,0.7
+DINNER,Plato Fuerte,Pork Chop,Food,42.0,0.7
+DINNER,Botonas,Chipotle Refill,Food,40.0,0.6666666666666666
+DINNER,Botonas,Side Limes,Food,40.0,0.6666666666666666
+DINNER,Masa,Chicken Enchilada,Food,39.0,0.65
+DINNER,Plato Fuerte,Tetelas,Food,37.0,0.6166666666666667
+DINNER,Masa,Beef Tamal,Food,36.0,0.6
+DINNER,Masa,Empanadas Potato Pea,Food,35.0,0.5833333333333334
+DINNER,Masa,Empanadas Chorizo Potato,Food,33.5,0.5583333333333333
+DINNER,Plato Fuerte,Recado Spareribs,Food,32.0,0.5333333333333333
+DINNER,Masa,Broccoli Rabe Quesadilla,Food,31.0,0.5166666666666667
+DINNER,Masa,Wild Mushroom Tamal,Food,31.0,0.5166666666666667
+DINNER,Masa,Cauliflower Quesadilla,Food,29.0,0.48333333333333334
+DINNER,Masa,Al Pastor Tacos,Food,29.0,0.48333333333333334
+DINNER,Sides,Green Beans,Food,26.0,0.43333333333333335
+DINNER,Dessert,Pan De Muerto,Food,26.0,0.43333333333333335
+DINNER,Masa,Banh Mi Tacos,Food,25.0,0.4166666666666667
+DINNER,Botonas,Salsa Verde Refill,Food,23.0,0.38333333333333336
+DINNER,Masa,Shrimp Empanadas,Food,21.0,0.35
+DINNER,Plato Fuerte,Pork Loin,Food,21.0,0.35
+DINNER,Botonas,Side of Crema,Food,20.0,0.3333333333333333
+DINNER,Plato Fuerte,Grilled Gulf Shrimp,Food,19.0,0.31666666666666665
+DINNER,Masa,Corn Enchilada,Food,17.0,0.2833333333333333
+DINNER,Botonas,Pico De Gallo,Food,15.0,0.25
+DINNER,Plato Fuerte,Pozole rojo,Food,14.0,0.23333333333333334
+DINNER,Dessert,Empanadas de Manzana,Food,13.0,0.21666666666666667
+DINNER,Plato Fuerte,Pork Chile Verde,Food,12.0,0.2
+DINNER,Masa,Gorditas,Food,11.0,0.18333333333333332
+DINNER,Plato Fuerte,Beef Brisket,Food,9.0,0.15
+DINNER,Botonas,Arbol Refill,Food,7.0,0.11666666666666667
+DINNER,Botonas,Puja Refill,Food,7.0,0.11666666666666667
+DINNER,Botonas,Cascabel Refill,Food,5.0,0.08333333333333333
+DINNER,Plato Fuerte,Zarandeado,Food,5.0,0.08333333333333333
+DINNER,Sides,Sd Mole Negro,Food,4.0,0.06666666666666667
+DINNER,Plato Fuerte,Roasted Turkey w/ Mole,Food,4.0,0.06666666666666667
+DINNER,Masa,Cheese Enchilada,Food,4.0,0.06666666666666667
+DINNER,Antojitos,Extra Meatball,Food,2.0,0.03333333333333333
+DINNER,Masa,Lengua Tacos,Food,2.0,0.03333333333333333
+DINNER,Masa,Squash Blossoms Quesadilla,Food,2.0,0.03333333333333333

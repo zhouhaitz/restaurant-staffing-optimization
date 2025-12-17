@@ -1,0 +1,1457 @@
+{
+  "dish_recipes": {
+    "Chips w/ Guacamole": [
+      [
+        "guac_station",
+        1.2,
+        0.2
+      ]
+    ],
+    "Fish Tacos": [
+      [
+        "wood_grill",
+        1.8,
+        0.4
+      ],
+      [
+        "tortilla_station",
+        0.8,
+        0.1
+      ],
+      [
+        "guac_station",
+        0.5,
+        0.1
+      ]
+    ],
+    "Chicken Tamal": [
+      [
+        "sautee_station",
+        1.2,
+        0.2
+      ]
+    ],
+    "Pork Enchilada": [
+      [
+        "sautee_station",
+        2.3,
+        0.4
+      ],
+      [
+        "guac_station",
+        0.5,
+        0.1
+      ]
+    ],
+    "White Shrimp Ceviche": [
+      [
+        "salad_station",
+        1.8,
+        0.3
+      ]
+    ],
+    "Ensalada Picada": [
+      [
+        "salad_station",
+        2.0,
+        0.4
+      ]
+    ],
+    "Chile Relleno": [
+      [
+        "sautee_station",
+        2.2,
+        0.4
+      ],
+      [
+        "guac_station",
+        0.8,
+        0.2
+      ]
+    ],
+    "Fresh Tortilla Chips": [
+      [
+        "guac_station",
+        0.5,
+        0.1
+      ]
+    ],
+    "Bitter Greens Salad": [
+      [
+        "salad_station",
+        2.0,
+        0.4
+      ]
+    ],
+    "Tlayuda": [
+      [
+        "wood_grill",
+        2.5,
+        0.5
+      ],
+      [
+        "sautee_station",
+        1.5,
+        0.3
+      ]
+    ],
+    "Oaxacan Chocolate Budin": [
+      [
+        "sautee_station",
+        1.0,
+        0.2
+      ]
+    ],
+    "Mushroom Quesadilla": [
+      [
+        "tortilla_station",
+        1.5,
+        0.2
+      ],
+      [
+        "sautee_station",
+        1.5,
+        0.3
+      ]
+    ],
+    "Flan": [
+      [
+        "salad_station",
+        0.5,
+        0.1
+      ]
+    ],
+    "Jicama & Cucumber": [
+      [
+        "salad_station",
+        1.2,
+        0.2
+      ]
+    ],
+    "Duck Enchiladas": [
+      [
+        "sautee_station",
+        2.5,
+        0.4
+      ],
+      [
+        "guac_station",
+        0.5,
+        0.1
+      ]
+    ],
+    "Combo Tacos": [
+      [
+        "tortilla_station",
+        1.0,
+        0.2
+      ],
+      [
+        "sautee_station",
+        1.8,
+        0.3
+      ],
+      [
+        "guac_station",
+        0.5,
+        0.1
+      ]
+    ],
+    "Sweet Potato Tacos": [
+      [
+        "sautee_station",
+        1.6,
+        0.3
+      ],
+      [
+        "tortilla_station",
+        0.8,
+        0.1
+      ]
+    ],
+    "Spit-Roasted Whole Chicken": [
+      [
+        "wood_grill",
+        2.8,
+        0.6
+      ],
+      [
+        "sautee_station",
+        1.0,
+        0.2
+      ],
+      [
+        "tortilla_station",
+        1.0,
+        0.1
+      ]
+    ],
+    "Papas Fritas": [
+      [
+        "sautee_station",
+        1.5,
+        0.3
+      ],
+      [
+        "guac_station",
+        0.5,
+        0.1
+      ]
+    ],
+    "Hamachi Crudo": [
+      [
+        "salad_station",
+        2.2,
+        0.4
+      ]
+    ],
+    "Brussels Sprouts & Squash": [
+      [
+        "sautee_station",
+        1.5,
+        0.3
+      ]
+    ],
+    "Wood-grilled Chicken Livers": [
+      [
+        "wood_grill",
+        2.0,
+        0.5
+      ],
+      [
+        "guac_station",
+        0.5,
+        0.1
+      ]
+    ],
+    "Rice": [
+      [
+        "sautee_station",
+        0.5,
+        0.1
+      ]
+    ],
+    "Wagyu Flat Iron Steak": [
+      [
+        "wood_grill",
+        3.2,
+        0.7
+      ],
+      [
+        "sautee_station",
+        1.5,
+        0.3
+      ],
+      [
+        "tortilla_station",
+        1.0,
+        0.1
+      ]
+    ],
+    "Flautas": [
+      [
+        "sautee_station",
+        2.0,
+        0.3
+      ],
+      [
+        "guac_station",
+        1.0,
+        0.2
+      ]
+    ],
+    "Chicken Quesadilla": [
+      [
+        "tortilla_station",
+        1.5,
+        0.2
+      ],
+      [
+        "sautee_station",
+        1.5,
+        0.3
+      ]
+    ],
+    "Mixiote de Pollo": [
+      [
+        "sautee_station",
+        2.5,
+        0.4
+      ],
+      [
+        "tortilla_station",
+        0.5,
+        0.1
+      ]
+    ],
+    "Soup": [
+      [
+        "sautee_station",
+        0.8,
+        0.1
+      ],
+      [
+        "guac_station",
+        0.2,
+        0.05
+      ]
+    ],
+    "Carnitas Tacos": [
+      [
+        "sautee_station",
+        1.8,
+        0.3
+      ],
+      [
+        "tortilla_station",
+        0.8,
+        0.1
+      ],
+      [
+        "guac_station",
+        0.5,
+        0.1
+      ]
+    ],
+    "Beef & Pork Albondigas": [
+      [
+        "sautee_station",
+        1.8,
+        0.3
+      ]
+    ],
+    "Midnight Black Beans": [
+      [
+        "sautee_station",
+        0.5,
+        0.1
+      ]
+    ],
+    "Triple Tacos": [
+      [
+        "tortilla_station",
+        1.0,
+        0.2
+      ],
+      [
+        "sautee_station",
+        1.8,
+        0.3
+      ],
+      [
+        "guac_station",
+        0.5,
+        0.1
+      ]
+    ],
+    "Veggie Tamal": [
+      [
+        "sautee_station",
+        1.2,
+        0.2
+      ]
+    ],
+    "Side Guac": [
+      [
+        "guac_station",
+        0.8,
+        0.15
+      ]
+    ],
+    "Early Girl Tomatoes": [
+      [
+        "salad_station",
+        1.0,
+        0.2
+      ]
+    ],
+    "Mixed Baby Lettuces": [
+      [
+        "salad_station",
+        1.0,
+        0.2
+      ]
+    ],
+    "Arroz Con Leche": [
+      [
+        "sautee_station",
+        0.8,
+        0.15
+      ]
+    ],
+    "Butternut Squash Enchilada": [
+      [
+        "sautee_station",
+        2.3,
+        0.4
+      ],
+      [
+        "guac_station",
+        0.5,
+        0.1
+      ]
+    ],
+    "Grilled Corn On The Cob": [
+      [
+        "wood_grill",
+        1.5,
+        0.3
+      ]
+    ],
+    "Empanadas": [
+      [
+        "sautee_station",
+        1.8,
+        0.3
+      ]
+    ],
+    "Shrimp Quesadilla": [
+      [
+        "tortilla_station",
+        1.5,
+        0.2
+      ],
+      [
+        "sautee_station",
+        1.6,
+        0.3
+      ]
+    ],
+    "Barbacoa Tacos": [
+      [
+        "sautee_station",
+        1.5,
+        0.3
+      ],
+      [
+        "tortilla_station",
+        0.8,
+        0.1
+      ],
+      [
+        "guac_station",
+        0.5,
+        0.1
+      ]
+    ],
+    "Pinquito Beans Refritos": [
+      [
+        "sautee_station",
+        0.8,
+        0.1
+      ]
+    ],
+    "Escabeche de Verduras": [
+      [
+        "salad_station",
+        0.8,
+        0.1
+      ]
+    ],
+    "Beef Barbacoa Quesadilla": [
+      [
+        "tortilla_station",
+        1.5,
+        0.2
+      ],
+      [
+        "sautee_station",
+        1.6,
+        0.3
+      ]
+    ],
+    "Pork Spareribs": [
+      [
+        "sautee_station",
+        2.8,
+        0.5
+      ],
+      [
+        "tortilla_station",
+        1.0,
+        0.1
+      ]
+    ],
+    "Carne Asada Tacos": [
+      [
+        "wood_grill",
+        1.8,
+        0.4
+      ],
+      [
+        "tortilla_station",
+        0.8,
+        0.1
+      ],
+      [
+        "guac_station",
+        0.5,
+        0.1
+      ]
+    ],
+    "Tinga Tacos": [
+      [
+        "sautee_station",
+        1.5,
+        0.3
+      ],
+      [
+        "tortilla_station",
+        0.8,
+        0.1
+      ],
+      [
+        "guac_station",
+        0.5,
+        0.1
+      ]
+    ],
+    "Red Kuri Squash Quesadilla": [
+      [
+        "tortilla_station",
+        1.5,
+        0.2
+      ],
+      [
+        "sautee_station",
+        1.5,
+        0.3
+      ]
+    ],
+    "Turkey Enchilada": [
+      [
+        "sautee_station",
+        2.3,
+        0.4
+      ],
+      [
+        "guac_station",
+        0.5,
+        0.1
+      ]
+    ],
+    "Churro Bites": [
+      [
+        "sautee_station",
+        1.2,
+        0.2
+      ]
+    ],
+    "Single Taco": [
+      [
+        "tortilla_station",
+        0.8,
+        0.1
+      ],
+      [
+        "sautee_station",
+        1.2,
+        0.2
+      ]
+    ],
+    "Pibil Tacos": [
+      [
+        "sautee_station",
+        1.5,
+        0.3
+      ],
+      [
+        "tortilla_station",
+        0.8,
+        0.1
+      ],
+      [
+        "guac_station",
+        0.5,
+        0.1
+      ]
+    ],
+    "Rabbit Tinga Quesadilla": [
+      [
+        "tortilla_station",
+        1.5,
+        0.2
+      ],
+      [
+        "sautee_station",
+        1.6,
+        0.3
+      ]
+    ],
+    "Pork Tamal": [
+      [
+        "sautee_station",
+        1.2,
+        0.2
+      ]
+    ],
+    "Braised Collard Greens": [
+      [
+        "sautee_station",
+        1.2,
+        0.2
+      ]
+    ],
+    "Whole Pinquito Beans": [
+      [
+        "sautee_station",
+        0.5,
+        0.1
+      ]
+    ],
+    "Beef Cheek Tacos": [
+      [
+        "sautee_station",
+        1.8,
+        0.4
+      ],
+      [
+        "tortilla_station",
+        0.8,
+        0.1
+      ],
+      [
+        "guac_station",
+        0.5,
+        0.1
+      ]
+    ],
+    "Pork Shoulder": [
+      [
+        "wood_grill",
+        2.8,
+        0.6
+      ],
+      [
+        "sautee_station",
+        1.5,
+        0.3
+      ]
+    ],
+    "Chile Quesadilla": [
+      [
+        "tortilla_station",
+        1.5,
+        0.2
+      ],
+      [
+        "sautee_station",
+        1.5,
+        0.3
+      ]
+    ],
+    "Lamb Chop": [
+      [
+        "wood_grill",
+        3.0,
+        0.6
+      ],
+      [
+        "sautee_station",
+        1.5,
+        0.3
+      ]
+    ],
+    "Lamb Quesadilla": [
+      [
+        "tortilla_station",
+        1.5,
+        0.2
+      ],
+      [
+        "sautee_station",
+        1.6,
+        0.3
+      ]
+    ],
+    "Cheese Quesadilla": [
+      [
+        "tortilla_station",
+        1.2,
+        0.2
+      ],
+      [
+        "sautee_station",
+        1.0,
+        0.2
+      ]
+    ],
+    "Pork Chop": [
+      [
+        "wood_grill",
+        3.0,
+        0.6
+      ],
+      [
+        "sautee_station",
+        1.5,
+        0.3
+      ]
+    ],
+    "Chicken Enchilada": [
+      [
+        "sautee_station",
+        2.2,
+        0.4
+      ],
+      [
+        "guac_station",
+        0.5,
+        0.1
+      ]
+    ],
+    "Tetelas": [
+      [
+        "tortilla_station",
+        1.5,
+        0.2
+      ],
+      [
+        "sautee_station",
+        1.5,
+        0.3
+      ]
+    ],
+    "Beef Tamal": [
+      [
+        "sautee_station",
+        1.2,
+        0.2
+      ]
+    ],
+    "Empanadas Potato Pea": [
+      [
+        "sautee_station",
+        1.8,
+        0.3
+      ]
+    ],
+    "Empanadas Chorizo Potato": [
+      [
+        "sautee_station",
+        1.8,
+        0.3
+      ]
+    ],
+    "Recado Spareribs": [
+      [
+        "sautee_station",
+        2.8,
+        0.5
+      ],
+      [
+        "tortilla_station",
+        1.0,
+        0.1
+      ]
+    ],
+    "Broccoli Rabe Quesadilla": [
+      [
+        "tortilla_station",
+        1.5,
+        0.2
+      ],
+      [
+        "sautee_station",
+        1.5,
+        0.3
+      ]
+    ],
+    "Wild Mushroom Tamal": [
+      [
+        "sautee_station",
+        1.2,
+        0.2
+      ]
+    ],
+    "Cauliflower Quesadilla": [
+      [
+        "tortilla_station",
+        1.5,
+        0.2
+      ],
+      [
+        "sautee_station",
+        1.5,
+        0.3
+      ]
+    ],
+    "Al Pastor Tacos": [
+      [
+        "wood_grill",
+        1.8,
+        0.4
+      ],
+      [
+        "tortilla_station",
+        0.8,
+        0.1
+      ],
+      [
+        "guac_station",
+        0.5,
+        0.1
+      ]
+    ],
+    "Green Beans": [
+      [
+        "sautee_station",
+        1.0,
+        0.2
+      ]
+    ],
+    "Pan De Muerto": [
+      [
+        "salad_station",
+        0.5,
+        0.1
+      ]
+    ],
+    "Banh Mi Tacos": [
+      [
+        "sautee_station",
+        1.5,
+        0.3
+      ],
+      [
+        "tortilla_station",
+        0.8,
+        0.1
+      ],
+      [
+        "guac_station",
+        0.5,
+        0.1
+      ]
+    ],
+    "Shrimp Empanadas": [
+      [
+        "sautee_station",
+        1.8,
+        0.3
+      ]
+    ],
+    "Pork Loin": [
+      [
+        "wood_grill",
+        2.8,
+        0.5
+      ],
+      [
+        "sautee_station",
+        1.5,
+        0.3
+      ]
+    ],
+    "Grilled Gulf Shrimp": [
+      [
+        "wood_grill",
+        2.0,
+        0.4
+      ],
+      [
+        "sautee_station",
+        1.0,
+        0.2
+      ]
+    ],
+    "Corn Enchilada": [
+      [
+        "sautee_station",
+        2.0,
+        0.4
+      ],
+      [
+        "guac_station",
+        0.5,
+        0.1
+      ]
+    ],
+    "Pico De Gallo": [
+      [
+        "salad_station",
+        0.8,
+        0.1
+      ]
+    ],
+    "Pozole Rojo": [
+      [
+        "sautee_station",
+        2.0,
+        0.3
+      ]
+    ],
+    "Empanadas de Manzana": [
+      [
+        "sautee_station",
+        1.5,
+        0.2
+      ]
+    ],
+    "Pork Chile Verde": [
+      [
+        "sautee_station",
+        2.5,
+        0.4
+      ],
+      [
+        "tortilla_station",
+        0.5,
+        0.1
+      ]
+    ],
+    "Gorditas": [
+      [
+        "tortilla_station",
+        1.5,
+        0.2
+      ],
+      [
+        "sautee_station",
+        1.5,
+        0.3
+      ]
+    ],
+    "Beef Brisket": [
+      [
+        "wood_grill",
+        3.0,
+        0.6
+      ],
+      [
+        "sautee_station",
+        1.5,
+        0.3
+      ]
+    ],
+    "Zarandeado": [
+      [
+        "wood_grill",
+        2.5,
+        0.5
+      ],
+      [
+        "sautee_station",
+        1.0,
+        0.2
+      ]
+    ],
+    "Roasted Turkey w/ Mole": [
+      [
+        "sautee_station",
+        2.5,
+        0.4
+      ],
+      [
+        "guac_station",
+        0.5,
+        0.1
+      ]
+    ],
+    "Cheese Enchilada": [
+      [
+        "sautee_station",
+        2.0,
+        0.4
+      ],
+      [
+        "guac_station",
+        0.5,
+        0.1
+      ]
+    ],
+    "Lengua Tacos": [
+      [
+        "sautee_station",
+        1.5,
+        0.3
+      ],
+      [
+        "tortilla_station",
+        0.8,
+        0.1
+      ],
+      [
+        "guac_station",
+        0.5,
+        0.1
+      ]
+    ],
+    "Squash Blossoms Quesadilla": [
+      [
+        "tortilla_station",
+        1.5,
+        0.2
+      ],
+      [
+        "sautee_station",
+        1.5,
+        0.3
+      ]
+    ]
+  },
+  "menu_distribution": {
+    "Chips w/ Guacamole": 0.136722,
+    "Fish Tacos": 0.071948,
+    "Chicken Tamal": 0.04042,
+    "Pork Enchilada": 0.03557,
+    "White Shrimp Ceviche": 0.035368,
+    "Ensalada Picada": 0.033145,
+    "Chile Relleno": 0.028901,
+    "Fresh Tortilla Chips": 0.023545,
+    "Bitter Greens Salad": 0.023141,
+    "Tlayuda": 0.022838,
+    "Oaxacan Chocolate Budin": 0.021928,
+    "Mushroom Quesadilla": 0.020311,
+    "Flan": 0.019705,
+    "Jicama & Cucumber": 0.018694,
+    "Duck Enchiladas": 0.016876,
+    "Combo Tacos": 0.016572,
+    "Sweet Potato Tacos": 0.01637,
+    "Spit-Roasted Whole Chicken": 0.015865,
+    "Papas Fritas": 0.015461,
+    "Hamachi Crudo": 0.015158,
+    "Brussels Sprouts & Squash": 0.014349,
+    "Wood-grilled Chicken Livers": 0.014147,
+    "Rice": 0.014147,
+    "Wagyu Flat Iron Steak": 0.01253,
+    "Flautas": 0.012328,
+    "Chicken Quesadilla": 0.012227,
+    "Mixiote de Pollo": 0.01152,
+    "Soup": 0.01152,
+    "Carnitas Tacos": 0.011217,
+    "Beef & Pork Albondigas": 0.010711,
+    "Midnight Black Beans": 0.01061,
+    "Triple Tacos": 0.010206,
+    "Veggie Tamal": 0.010004,
+    "Side Guac": 0.009903,
+    "Early Girl Tomatoes": 0.009802,
+    "Mixed Baby Lettuces": 0.009095,
+    "Arroz Con Leche": 0.008387,
+    "Butternut Squash Enchilada": 0.008286,
+    "Grilled Corn On The Cob": 0.008185,
+    "Empanadas": 0.007579,
+    "Shrimp Quesadilla": 0.007377,
+    "Barbacoa Tacos": 0.006871,
+    "Pinquito Beans Refritos": 0.00677,
+    "Escabeche de Verduras": 0.006467,
+    "Beef Barbacoa Quesadilla": 0.006164,
+    "Pork Spareribs": 0.006063,
+    "Carne Asada Tacos": 0.005861,
+    "Tinga Tacos": 0.00576,
+    "Red Kuri Squash Quesadilla": 0.005659,
+    "Turkey Enchilada": 0.005457,
+    "Churro Bites": 0.005356,
+    "Single Taco": 0.005356,
+    "Pibil Tacos": 0.004648,
+    "Rabbit Tinga Quesadilla": 0.004648,
+    "Pork Tamal": 0.004547,
+    "Braised Collard Greens": 0.004446,
+    "Whole Pinquito Beans": 0.00384,
+    "Beef Cheek Tacos": 0.003537,
+    "Pork Shoulder": 0.003436,
+    "Chile Quesadilla": 0.003133,
+    "Lamb Chop": 0.003133,
+    "Lamb Quesadilla": 0.003032,
+    "Cheese Quesadilla": 0.002728,
+    "Pork Chop": 0.002728,
+    "Chicken Enchilada": 0.002526,
+    "Tetelas": 0.002425,
+    "Beef Tamal": 0.002324,
+    "Empanadas Potato Pea": 0.002223,
+    "Empanadas Chorizo Potato": 0.002223,
+    "Recado Spareribs": 0.002122,
+    "Broccoli Rabe Quesadilla": 0.002021,
+    "Wild Mushroom Tamal": 0.002021,
+    "Cauliflower Quesadilla": 0.00192,
+    "Al Pastor Tacos": 0.00192,
+    "Green Beans": 0.001718,
+    "Pan De Muerto": 0.001718,
+    "Banh Mi Tacos": 0.001617,
+    "Shrimp Empanadas": 0.001314,
+    "Pork Loin": 0.001314,
+    "Grilled Gulf Shrimp": 0.001213,
+    "Corn Enchilada": 0.001112,
+    "Pico De Gallo": 0.001011,
+    "Pozole Rojo": 0.000909,
+    "Empanadas de Manzana": 0.000808,
+    "Pork Chile Verde": 0.000808,
+    "Gorditas": 0.000707,
+    "Beef Brisket": 0.000606,
+    "Zarandeado": 0.000303,
+    "Roasted Turkey w/ Mole": 0.000303,
+    "Cheese Enchilada": 0.000303,
+    "Lengua Tacos": 0.000101,
+    "Squash Blossoms Quesadilla": 0.000101
+  },
+  "menu_catalog": {
+    "Chips w/ Guacamole": {
+      "price": 13.5,
+      "description": "Guacamole served w/ chips & three salsas"
+    },
+    "Fish Tacos": {
+      "price": 16,
+      "description": "Wood-grilled fish, spicy pickled cabbage, avocado aioli"
+    },
+    "Chicken Tamal": {
+      "price": 12,
+      "description": "Chicken tamal with mole"
+    },
+    "Pork Enchilada": {
+      "price": 17,
+      "description": "Pork enchilada with guajillo salsa, crema"
+    },
+    "White Shrimp Ceviche": {
+      "price": 16,
+      "description": "Aguachile verde, red onion, jicama"
+    },
+    "Ensalada Picada": {
+      "price": 16,
+      "description": "Little gems, beets, avocado, sheep feta, cilantro-yogurt vinaigrette"
+    },
+    "Chile Relleno": {
+      "price": 13,
+      "description": "Queso fresco, salsa ranchera, epazote"
+    },
+    "Fresh Tortilla Chips": {
+      "price": 7,
+      "description": "Served w/ three salsas"
+    },
+    "Bitter Greens Salad": {
+      "price": 16,
+      "description": "Persimmons, pomegranates, spiced pepitas, Manchego"
+    },
+    "Tlayuda": {
+      "price": 19,
+      "description": "Quesillo, caramelized onions, fried Brussels sprouts, black bean puree"
+    },
+    "Oaxacan Chocolate Budin": {
+      "price": 12,
+      "description": "Traditional Oaxacan chocolate bread pudding"
+    },
+    "Mushroom Quesadilla": {
+      "price": 16.5,
+      "description": "Wild mushroom quesadilla"
+    },
+    "Flan": {
+      "price": 10,
+      "description": "Classic Mexican flan"
+    },
+    "Jicama & Cucumber": {
+      "price": 5,
+      "description": "Seasoned with chile arbol, lime salt"
+    },
+    "Duck Enchiladas": {
+      "price": 19,
+      "description": "Duck enchiladas with mole"
+    },
+    "Combo Tacos": {
+      "price": 16,
+      "description": "Combination of taco varieties"
+    },
+    "Sweet Potato Tacos": {
+      "price": 14,
+      "description": "Guisado style, black bean puree, queso fresco"
+    },
+    "Spit-Roasted Whole Chicken": {
+      "price": 46,
+      "description": "Fire roasted fingerling potatoes, black beans, rice, tortillas"
+    },
+    "Papas Fritas": {
+      "price": 9,
+      "description": "Coriander-lime salt, chipotle aioli"
+    },
+    "Hamachi Crudo": {
+      "price": 22,
+      "description": "Aguachile amarillo, kohlrabi, watermelon radish, avocado"
+    },
+    "Brussels Sprouts & Squash": {
+      "price": 11,
+      "description": "Arbol chile, pepitas"
+    },
+    "Wood-grilled Chicken Livers": {
+      "price": 12,
+      "description": "Bacon, rajas, chipotle crema"
+    },
+    "Rice": {
+      "price": 6,
+      "description": "Steamed saffron rice"
+    },
+    "Wagyu Flat Iron Steak": {
+      "price": 78,
+      "description": "Brussels sprouts and autumn squash, black beans, rice, tortillas"
+    },
+    "Flautas": {
+      "price": 13,
+      "description": "Guacamole, salsa verde, queso fresco"
+    },
+    "Chicken Quesadilla": {
+      "price": 16.5,
+      "description": "Chicken quesadilla with tomatillo salsa"
+    },
+    "Mixiote de Pollo": {
+      "price": 21,
+      "description": "Chicken leg and thigh, potatoes, nopales, ancho chile salsa"
+    },
+    "Soup": {
+      "price": 10,
+      "description": "Soup of the day"
+    },
+    "Carnitas Tacos": {
+      "price": 16,
+      "description": "Slow-cooked pork carnitas tacos"
+    },
+    "Beef & Pork Albondigas": {
+      "price": 15,
+      "description": "Meatballs served in adobo sauce"
+    },
+    "Midnight Black Beans": {
+      "price": 6,
+      "description": "De olla style"
+    },
+    "Triple Tacos": {
+      "price": 18,
+      "description": "Three tacos of your choice"
+    },
+    "Veggie Tamal": {
+      "price": 12,
+      "description": "Vegetable tamal"
+    },
+    "Side Guac": {
+      "price": 8,
+      "description": "Side of guacamole"
+    },
+    "Early Girl Tomatoes": {
+      "price": 12,
+      "description": "Fresh early girl tomatoes"
+    },
+    "Mixed Baby Lettuces": {
+      "price": 9,
+      "description": "Radish, herbs, sherry vinaigrette"
+    },
+    "Arroz Con Leche": {
+      "price": 10,
+      "description": "Traditional rice pudding"
+    },
+    "Butternut Squash Enchilada": {
+      "price": 17,
+      "description": "Butternut squash enchilada"
+    },
+    "Grilled Corn On The Cob": {
+      "price": 8,
+      "description": "Wood-grilled corn"
+    },
+    "Empanadas": {
+      "price": 14,
+      "description": "Traditional empanadas"
+    },
+    "Shrimp Quesadilla": {
+      "price": 18,
+      "description": "Shrimp quesadilla"
+    },
+    "Barbacoa Tacos": {
+      "price": 16,
+      "description": "Slow-cooked beef barbacoa tacos"
+    },
+    "Pinquito Beans Refritos": {
+      "price": 6,
+      "description": "Refried pinquito beans"
+    },
+    "Escabeche de Verduras": {
+      "price": 7,
+      "description": "Pickled vegetables of the day"
+    },
+    "Beef Barbacoa Quesadilla": {
+      "price": 17,
+      "description": "Beef barbacoa quesadilla"
+    },
+    "Pork Spareribs": {
+      "price": 52,
+      "description": "Braised collard greens, black beans, rice, tortillas"
+    },
+    "Carne Asada Tacos": {
+      "price": 17,
+      "description": "Grilled steak tacos"
+    },
+    "Tinga Tacos": {
+      "price": 16,
+      "description": "Chicken tinga tacos"
+    },
+    "Red Kuri Squash Quesadilla": {
+      "price": 16.5,
+      "description": "Charred tomatillo-cilantro salsa"
+    },
+    "Turkey Enchilada": {
+      "price": 17,
+      "description": "Guajillo salsa, crema"
+    },
+    "Churro Bites": {
+      "price": 10,
+      "description": "Fried churro bites with chocolate sauce"
+    },
+    "Single Taco": {
+      "price": 6,
+      "description": "Single taco of your choice"
+    },
+    "Pibil Tacos": {
+      "price": 16,
+      "description": "Slow-roasted pork pibil tacos"
+    },
+    "Rabbit Tinga Quesadilla": {
+      "price": 18,
+      "description": "Rabbit tinga quesadilla"
+    },
+    "Pork Tamal": {
+      "price": 12,
+      "description": "Roasted pork tamal"
+    },
+    "Braised Collard Greens": {
+      "price": 11,
+      "description": "Smoked bacon, habanero chile"
+    },
+    "Whole Pinquito Beans": {
+      "price": 6,
+      "description": "Whole pinquito beans"
+    },
+    "Beef Cheek Tacos": {
+      "price": 17,
+      "description": "Braised beef cheek tacos"
+    },
+    "Pork Shoulder": {
+      "price": 48,
+      "description": "Slow-roasted pork shoulder"
+    },
+    "Chile Quesadilla": {
+      "price": 16.5,
+      "description": "Chile quesadilla"
+    },
+    "Lamb Chop": {
+      "price": 32,
+      "description": "Grilled lamb chop"
+    },
+    "Lamb Quesadilla": {
+      "price": 18,
+      "description": "Lamb quesadilla"
+    },
+    "Cheese Quesadilla": {
+      "price": 14,
+      "description": "Cheese quesadilla"
+    },
+    "Pork Chop": {
+      "price": 29,
+      "description": "Anson Mills grits, braised collard greens, salsa verde"
+    },
+    "Chicken Enchilada": {
+      "price": 16,
+      "description": "Chicken enchilada"
+    },
+    "Tetelas": {
+      "price": 16,
+      "description": "Traditional Oaxacan tetelas"
+    },
+    "Beef Tamal": {
+      "price": 12,
+      "description": "Beef tamal"
+    },
+    "Empanadas Potato Pea": {
+      "price": 14,
+      "description": "Potato and pea empanadas"
+    },
+    "Empanadas Chorizo Potato": {
+      "price": 14,
+      "description": "Chorizo and potato empanadas"
+    },
+    "Recado Spareribs": {
+      "price": 52,
+      "description": "Recado-marinated spareribs"
+    },
+    "Broccoli Rabe Quesadilla": {
+      "price": 16.5,
+      "description": "Broccoli rabe quesadilla"
+    },
+    "Wild Mushroom Tamal": {
+      "price": 14,
+      "description": "Wild mushroom tamal"
+    },
+    "Cauliflower Quesadilla": {
+      "price": 16.5,
+      "description": "Cauliflower quesadilla"
+    },
+    "Al Pastor Tacos": {
+      "price": 17,
+      "description": "Al pastor tacos"
+    },
+    "Green Beans": {
+      "price": 9,
+      "description": "Sauteed green beans"
+    },
+    "Pan De Muerto": {
+      "price": 8,
+      "description": "Traditional Day of the Dead bread"
+    },
+    "Banh Mi Tacos": {
+      "price": 16,
+      "description": "Fusion banh mi style tacos"
+    },
+    "Shrimp Empanadas": {
+      "price": 16,
+      "description": "Shrimp empanadas"
+    },
+    "Pork Loin": {
+      "price": 28,
+      "description": "Grilled pork loin"
+    },
+    "Grilled Gulf Shrimp": {
+      "price": 24,
+      "description": "Wood-grilled gulf shrimp"
+    },
+    "Corn Enchilada": {
+      "price": 15,
+      "description": "Corn enchilada"
+    },
+    "Pico De Gallo": {
+      "price": 5,
+      "description": "Fresh tomato salsa"
+    },
+    "Pozole Rojo": {
+      "price": 18,
+      "description": "Traditional red pozole"
+    },
+    "Empanadas de Manzana": {
+      "price": 10,
+      "description": "Apple empanadas"
+    },
+    "Pork Chile Verde": {
+      "price": 22,
+      "description": "Pork in green chile sauce"
+    },
+    "Gorditas": {
+      "price": 14,
+      "description": "Stuffed gorditas"
+    },
+    "Beef Brisket": {
+      "price": 38,
+      "description": "Slow-smoked beef brisket"
+    },
+    "Zarandeado": {
+      "price": 28,
+      "description": "Wood-grilled fish zarandeado style"
+    },
+    "Roasted Turkey w/ Mole": {
+      "price": 24,
+      "description": "Roasted turkey with mole sauce"
+    },
+    "Cheese Enchilada": {
+      "price": 15,
+      "description": "Cheese enchilada"
+    },
+    "Lengua Tacos": {
+      "price": 16,
+      "description": "Pickled turnip-kohlrabi slaw, salsa verde"
+    },
+    "Squash Blossoms Quesadilla": {
+      "price": 17,
+      "description": "Squash blossoms quesadilla"
+    }
+  }
+}

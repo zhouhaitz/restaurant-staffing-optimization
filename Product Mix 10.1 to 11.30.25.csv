@@ -1,0 +1,879 @@
+Type,Menu,Menu group,Subgroup,"Item, open item",Size modifier,"Modifiers, special requests",Sales Category,Qty sold
+menuItem,DINNER,Botonas,,Fresh Tortilla Chips,,,Food,364
+menuItem,DINNER,Botonas,,Chips w/ Guacamole,,,Food,2112
+menuItem,DINNER,Botonas,,Pico De Gallo,,,Food,15
+menuItem,DINNER,Botonas,,Jicama & Cucumber,,,Food,288
+menuItem,DINNER,Botonas,,Escabeche De Verduras,,,Food,99
+menuItem,DINNER,Botonas,,Side Guac,,,Food,153
+menuItem,DINNER,Botonas,,Papas Fritas,,,Food,239
+menuItem,DINNER,Botonas,,Side of Tortillas,,,Food,98
+menuItem,DINNER,Botonas,,Salsa Verde Refill,,,Food,23
+menuItem,DINNER,Botonas,,Chipotle Refill,,,Food,40
+menuItem,DINNER,Botonas,,Arbol Refill,,,Food,7
+menuItem,DINNER,Botonas,,Cascabel Refill,,,Food,5
+menuItem,DINNER,Botonas,,Puja Refill,,,Food,7
+menuItem,DINNER,Botonas,,3 Salsa Refill,,,Food,120
+menuItem,DINNER,Botonas,,CHIP REFILL,,,Food,920
+menuItem,DINNER,Botonas,,Side Limes,,,Food,40
+menuItem,DINNER,Botonas,,Side of Crema,,,Food,20
+,DINNER,Antojitos,,,,,,2811
+menuItem,DINNER,Antojitos,,White Shrimp Ceviche,,,Food,546
+menuItem,DINNER,Antojitos,,Ensalada Picada,,,Food,512
+menuItem,DINNER,Antojitos,,Bitter Greens Escarole,,,Food,357
+menuItem,DINNER,Antojitos,,Early girl tomatoes,,,Food,152
+menuItem,DINNER,Antojitos,,Wood Grilled Chicken Livers,,,Food,219
+menuItem,DINNER,Antojitos,,Hamachi Crudo,,,Food,234
+menuItem,DINNER,Antojitos,,Soup,,,Food,178
+menuItem,DINNER,Antojitos,,Chile Relleno,,,Food,446
+menuItem,DINNER,Antojitos,,Beef & Pork Albóndigas En Adobo,,,Food,165
+menuItem,DINNER,Antojitos,,Extra Meatball,,,Food,2
+,DINNER,Masa,,,,,,6328
+menuItem,DINNER,Masa,,Beef Barbacoa Quesadilla,,,Food,95
+menuItem,DINNER,Masa,,Broccoli Rabe Quesadilla,,,Food,31
+menuItem,DINNER,Masa,,Squash Blossoms Quesadilla,,,Food,2
+menuItem,DINNER,Masa,,Mushroom Quesadilla,,,Food,314
+menuItem,DINNER,Masa,,Red Squash Quesadilla,,,Food,87
+menuItem,DINNER,Masa,,Rabbit Tinga Quesadilla,,,Food,71
+menuItem,DINNER,Masa,,Chicken Quesadilla,,,Food,188
+menuItem,DINNER,Masa,,Cheese Quesadilla,,,Food,42
+menuItem,DINNER,Masa,,Shrimp Quesadilla,,,Food,114
+menuItem,DINNER,Masa,,Lamb Quesadilla,,,Food,47
+menuItem,DINNER,Masa,,Cauliflower Quesadilla,,,Food,29
+menuItem,DINNER,Masa,,Chile Quesadilla,,,Food,49
+menuItem,DINNER,Masa,,Chicken Enchilada,,,Food,39
+menuItem,DINNER,Masa,,Turkey Enchilada,,,Food,85
+menuItem,DINNER,Masa,,Corn Enchilada,,,Food,17
+menuItem,DINNER,Masa,,Duck Enchiladas,,,Food,261
+menuItem,DINNER,Masa,,Butternut Squash Enchilada,,,Food,128
+menuItem,DINNER,Masa,,Pork Enchilada,,,Food,549
+menuItem,DINNER,Masa,,Cheese Enchilada,,,Food,4
+menuItem,DINNER,Masa,,Chicken Tamal,,,Food,624
+menuItem,DINNER,Masa,,Beef Tamal,,,Food,36
+menuItem,DINNER,Masa,,Veggie Tamal,,,Food,155
+menuItem,DINNER,Masa,,Pork Tamal,,,Food,70
+menuItem,DINNER,Masa,,Wild Mushroom Tamal,,,Food,31
+menuItem,DINNER,Masa,,Fish Tacos,,,Food,1111
+menuItem,DINNER,Masa,,Tinga Tacos,,,Food,89
+menuItem,DINNER,Masa,,Carne Asada Tacos,,,Food,90
+menuItem,DINNER,Masa,,Al Pastor Tacos,,,Food,29
+menuItem,DINNER,Masa,,Barbacoa Tacos,,,Food,106
+menuItem,DINNER,Masa,,Pibil Tacos,,,Food,72
+menuItem,DINNER,Masa,,Beef Cheek Tacos,,,Food,54
+menuItem,DINNER,Masa,,Carnitas Tacos,,,Food,173
+menuItem,DINNER,Masa,,Sweet Potato Tacos,,,Food,253
+menuItem,DINNER,Masa,,Lengua Tacos,,,Food,2
+menuItem,DINNER,Masa,,Tlayuda,,,Food,352
+menuItem,DINNER,Masa,,Empanadas Potato Pea,,,Food,35
+menuItem,DINNER,Masa,,Shrimp Empanadas,,,Food,21
+menuItem,DINNER,Masa,,Empanadas Chorizo Potato,,,Food,33.5
+menuItem,DINNER,Masa,,Flautas,,,Food,190
+menuItem,DINNER,Masa,,Empanadas,,,Food,117.5
+menuItem,DINNER,Masa,,Gorditas,,,Food,11
+menuItem,DINNER,Masa,,Banh Mi Tacos,,,Food,25
+,DINNER,Masa,Combination Tacos,,,,,496
+menuItem,DINNER,Masa,Combination Tacos,Single Taco,,,Food,82
+menuItem,DINNER,Masa,Combination Tacos,Combo Tacos,,,Food,256
+menuItem,DINNER,Masa,Combination Tacos,Triple Tacos,,,Food,158
+,DINNER,Plato Fuerte,,,,,,1006
+menuItem,DINNER,Plato Fuerte,,Mixiote de Pollo,,,Food,178
+menuItem,DINNER,Plato Fuerte,,Pozole rojo,,,Food,14
+menuItem,DINNER,Plato Fuerte,,Tetelas,,,Food,37
+menuItem,DINNER,Plato Fuerte,,Recado Spareribs,,,Food,32
+menuItem,DINNER,Plato Fuerte,,Pork Chop,,,Food,42
+menuItem,DINNER,Plato Fuerte,,Grilled Gulf Shrimp,,,Food,19
+menuItem,DINNER,Plato Fuerte,,Lamb Chop,,,Food,48
+menuItem,DINNER,Plato Fuerte,,Spit-Roasted Whole Chicken,,,Food,245
+menuItem,DINNER,Plato Fuerte,,Pork Shoulder,,,Food,53
+menuItem,DINNER,Plato Fuerte,,Pork Spareribs,,,Food,94
+menuItem,DINNER,Plato Fuerte,,Pork Loin,,,Food,21
+menuItem,DINNER,Plato Fuerte,,Pork Chile Verde,,,Food,12
+menuItem,DINNER,Plato Fuerte,,Roasted Turkey w/ Mole,,,Food,4
+menuItem,DINNER,Plato Fuerte,,Beef Brisket,,,Food,9
+menuItem,DINNER,Plato Fuerte,,Wagyu Flat Iron Steak,,,Food,193
+menuItem,DINNER,Plato Fuerte,,Zarandeado,,,Food,5
+,DINNER,Sides,,,,,,1132
+menuItem,DINNER,Sides,,Mixed Baby Lettuces,,,Food,141
+menuItem,DINNER,Sides,,Green Beans,,,Food,26
+menuItem,DINNER,Sides,,Grilled Corn On The Cob,,,Food,127
+menuItem,DINNER,Sides,,Brussels sprouts & autumn squash,,,Food,221
+menuItem,DINNER,Sides,,Braised Collard Greens,,,Food,69
+menuItem,DINNER,Sides,,Rice,,,Food,218
+menuItem,DINNER,Sides,,Midnight Black Beans De Olla,,,Food,163
+menuItem,DINNER,Sides,,Pinquito Beans Refritos,,,Food,104
+menuItem,DINNER,Sides,,Pinquinto Beans whole,,,Food,59
+menuItem,DINNER,Sides,,Sd Mole Negro,,,Food,4
+,DINNER,Dessert,,,,,,893
+menuItem,DINNER,Dessert,,Arroz Con Leche,,,Food,129
+menuItem,DINNER,Dessert,,Flan,,,Food,304
+menuItem,DINNER,Dessert,,Oaxacan Chocolate Budin,,,Food,338
+menuItem,DINNER,Dessert,,Churro Bites,,,Food,83
+menuItem,DINNER,Dessert,,Pan De Muerto,,,Food,26
+menuItem,DINNER,Dessert,,Empanadas de Manzana,,,Food,13
+,DINNER,Group Dining,,,,,,2
+menuItem,DINNER,Group Dining,,Fire course 1,,,Food,1
+menuItem,DINNER,Group Dining,,Fire course 2,,,Food,1
+,INDOOR DRINKS,,,,,,,6557
+,INDOOR DRINKS,House Cocktails,,,,,,3894
+menuItem,INDOOR DRINKS,House Cocktails,,Margarita,,,Liquor,1391
+menuItem,INDOOR DRINKS,House Cocktails,,Cadillac Margarita,,,Liquor,23
+menuItem,INDOOR DRINKS,House Cocktails,,Mezcal Margarita,,,Liquor,113
+menuItem,INDOOR DRINKS,House Cocktails,,Margarita (zero proof),,,Liquor,119
+menuItem,INDOOR DRINKS,House Cocktails,,Palomaesque,,,Liquor,313
+menuItem,INDOOR DRINKS,House Cocktails,,The Comal Swizzle,,,Liquor,397
+menuItem,INDOOR DRINKS,House Cocktails,,El Chavo,,,Liquor,108
+menuItem,INDOOR DRINKS,House Cocktails,,Jack Satan,,,Liquor,399
+menuItem,INDOOR DRINKS,House Cocktails,,Joaquin Murrieta,,,Liquor,149
+menuItem,INDOOR DRINKS,House Cocktails,,Abuelo Sucio,,,Liquor,222
+menuItem,INDOOR DRINKS,House Cocktails,,Michelada,,,Liquor,20
+menuItem,INDOOR DRINKS,House Cocktails,,Cocktail Al Pastor,,,Liquor,103
+menuItem,INDOOR DRINKS,House Cocktails,,Matt's Cocktail,,,Liquor,74
+menuItem,INDOOR DRINKS,House Cocktails,,Quince Essential,,,Liquor,53
+menuItem,INDOOR DRINKS,House Cocktails,,Summer Camp,,,Liquor,88
+menuItem,INDOOR DRINKS,House Cocktails,,La Maravilla,,,Liquor,57
+menuItem,INDOOR DRINKS,House Cocktails,,Jolly Ranchero,,,Liquor,81
+menuItem,INDOOR DRINKS,House Cocktails,,Pucker Punch,,,NA Beverage,147
+menuItem,INDOOR DRINKS,House Cocktails,,Mexican Coffee,,,Liquor,26
+menuItem,INDOOR DRINKS,House Cocktails,,Agua Fresca Con Carne,,,Liquor,1
+menuItem,INDOOR DRINKS,House Cocktails,,Taste of...,,,Liquor,9
+menuItem,INDOOR DRINKS,House Cocktails,,Side of Limes,,,Liquor,1
+,INDOOR DRINKS,Classic Cocktails,,,,,,81
+menuItem,INDOOR DRINKS,Classic Cocktails,,Aperol Spritz,,,Liquor,3
+menuItem,INDOOR DRINKS,Classic Cocktails,,Aviation,,,Liquor,1
+menuItem,INDOOR DRINKS,Classic Cocktails,,Bloody Mary,,,Liquor,1
+menuItem,INDOOR DRINKS,Classic Cocktails,,Dark $ Stormy,,,Liquor,1
+menuItem,INDOOR DRINKS,Classic Cocktails,,Hot Toddy,,,Liquor,4
+menuItem,INDOOR DRINKS,Classic Cocktails,,Last Word,,,Liquor,1
+menuItem,INDOOR DRINKS,Classic Cocktails,,Lemon Drop,,,Liquor,1
+menuItem,INDOOR DRINKS,Classic Cocktails,,Manhattan,,,Liquor,15
+menuItem,INDOOR DRINKS,Classic Cocktails,,Martini,,,Liquor,1
+menuItem,INDOOR DRINKS,Classic Cocktails,,Mojito,,,Liquor,15
+menuItem,INDOOR DRINKS,Classic Cocktails,,Moscow Mule,,,Liquor,1
+menuItem,INDOOR DRINKS,Classic Cocktails,,Negroni,,,Liquor,5
+menuItem,INDOOR DRINKS,Classic Cocktails,,Old Fashioned,,,Liquor,16
+menuItem,INDOOR DRINKS,Classic Cocktails,,Paper Plane,,,Liquor,3
+menuItem,INDOOR DRINKS,Classic Cocktails,,Sazerac,,,Liquor,1
+menuItem,INDOOR DRINKS,Classic Cocktails,,White Russian,,,Liquor,1
+menuItem,INDOOR DRINKS,Classic Cocktails,,Paloma,,,Liquor,11
+,INDOOR DRINKS,Tequila,,,,,,198
+,INDOOR DRINKS,Tequila,Blanco,,,,,103
+menuItem,INDOOR DRINKS,Tequila,Blanco,Well Tequila Gran Clásico Blanco,,,Liquor,52
+menuItem,INDOOR DRINKS,Tequila,Blanco,Arette Suave Blanco,,,Liquor,1
+menuItem,INDOOR DRINKS,Tequila,Blanco,Calle 23 Blanco,,,Liquor,1
+menuItem,INDOOR DRINKS,Tequila,Blanco,Campo Azul 1940 blanco,,,Liquor,1
+menuItem,INDOOR DRINKS,Tequila,Blanco,Don Fulano Blanco,,,Liquor,1
+menuItem,INDOOR DRINKS,Tequila,Blanco,Don Julio Blanco,,,Liquor,9
+menuItem,INDOOR DRINKS,Tequila,Blanco,El Tesoro Blanco,,,Liquor,2
+menuItem,INDOOR DRINKS,Tequila,Blanco,Fortaleza Blanco,,,Liquor,7
+menuItem,INDOOR DRINKS,Tequila,Blanco,G4 Blanco,,,Liquor,3
+menuItem,INDOOR DRINKS,Tequila,Blanco,Lalo Blanco,,,Liquor,10
+menuItem,INDOOR DRINKS,Tequila,Blanco,Siete Leguas Blanco,,,Liquor,2
+menuItem,INDOOR DRINKS,Tequila,Blanco,Tapatio 110,,,Liquor,2
+menuItem,INDOOR DRINKS,Tequila,Blanco,Tapatio Blanco,,,Liquor,4
+menuItem,INDOOR DRINKS,Tequila,Blanco,Tequila Ocho Plata,,,Liquor,8
+,INDOOR DRINKS,Tequila,Reposado,,,,,85
+menuItem,INDOOR DRINKS,Tequila,Reposado,Well Tequila Reposado,,,Liquor,29
+menuItem,INDOOR DRINKS,Tequila,Reposado,Casa Noble  Reposado,,,Liquor,4
+menuItem,INDOOR DRINKS,Tequila,Reposado,Chamucos Reposado,,,Liquor,2
+menuItem,INDOOR DRINKS,Tequila,Reposado,Don Julio Reposado,,,Liquor,8
+menuItem,INDOOR DRINKS,Tequila,Reposado,El Tesoro Reposado,,,Liquor,4
+menuItem,INDOOR DRINKS,Tequila,Reposado,Espolon Reposado,,,Liquor,1
+menuItem,INDOOR DRINKS,Tequila,Reposado,Excellia Reposado,,,Liquor,2
+menuItem,INDOOR DRINKS,Tequila,Reposado,Fortaleza Reposado,,,Liquor,17
+menuItem,INDOOR DRINKS,Tequila,Reposado,G4 Reposado,,,Liquor,3
+menuItem,INDOOR DRINKS,Tequila,Reposado,Siete Leguas Reposado,,,Liquor,6
+menuItem,INDOOR DRINKS,Tequila,Reposado,Tapatio Reposado,,,Liquor,2
+menuItem,INDOOR DRINKS,Tequila,Reposado,Tequila Ocho Reposado,,,Liquor,6
+menuItem,INDOOR DRINKS,Tequila,Reposado,Campo Azul 1940 Reposado,,,Liquor,1
+,INDOOR DRINKS,Tequila,Anejo,,,,,10
+menuItem,INDOOR DRINKS,Tequila,Anejo,ArteNOM Anejo,,,Liquor,2
+menuItem,INDOOR DRINKS,Tequila,Anejo,Don Julio Anejo,,,Liquor,1
+menuItem,INDOOR DRINKS,Tequila,Anejo,El Tesoro Anejo,,,Liquor,1
+menuItem,INDOOR DRINKS,Tequila,Anejo,Siete Leguas Anejo,,,Liquor,2
+menuItem,INDOOR DRINKS,Tequila,Anejo,Tequila Ocho Anejo,,,Liquor,4
+,INDOOR DRINKS,Mezcal,,,,,,79
+menuItem,INDOOR DRINKS,Mezcal,,Well Mezcal Rayu,,,Liquor,23
+menuItem,INDOOR DRINKS,Mezcal,,Banhez Tobala,,,Liquor,1
+menuItem,INDOOR DRINKS,Mezcal,,Bozal Chino Verde,,,Liquor,3
+menuItem,INDOOR DRINKS,Mezcal,,Bruxo #2,,,Liquor,1
+menuItem,INDOOR DRINKS,Mezcal,,Del Maguey Chichicapa,,,Liquor,8
+menuItem,INDOOR DRINKS,Mezcal,,Del Maguey Santo Domingo,,,Liquor,1
+menuItem,INDOOR DRINKS,Mezcal,,Del Maguey Vida Espadin,,,Liquor,3
+menuItem,INDOOR DRINKS,Mezcal,,Don Amado Rustico,,,Liquor,2
+menuItem,INDOOR DRINKS,Mezcal,,Don Mateo Los Altos,,,Liquor,2
+menuItem,INDOOR DRINKS,Mezcal,,Don Mateo Cupreata,,,Liquor,2
+menuItem,INDOOR DRINKS,Mezcal,,El Mero Mero Espadin,,,Liquor,1
+menuItem,INDOOR DRINKS,Mezcal,,El Mero Mero Tepextate,,,Liquor,1
+menuItem,INDOOR DRINKS,Mezcal,,Espina Negra Tobala,,,Liquor,1
+menuItem,INDOOR DRINKS,Mezcal,,Fidencio Pechuga,,,Liquor,1
+menuItem,INDOOR DRINKS,Mezcal,,Los Nahuales Añejo,,,Liquor,1
+menuItem,INDOOR DRINKS,Mezcal,,Marca Negra Espadin,,,Liquor,2
+menuItem,INDOOR DRINKS,Mezcal,,Montelobos Tobala,,,Liquor,4
+menuItem,INDOOR DRINKS,Mezcal,,Rey Campero Espadin,,,Liquor,6
+menuItem,INDOOR DRINKS,Mezcal,,Rey Campero Madre Cuishe,,,Liquor,1
+menuItem,INDOOR DRINKS,Mezcal,,Siete Misterios,,,Liquor,1
+menuItem,INDOOR DRINKS,Mezcal,,Sotol Blanco,,,Liquor,2
+menuItem,INDOOR DRINKS,Mezcal,,Sotol Reposado,,,Liquor,1
+menuItem,INDOOR DRINKS,Mezcal,,Union El Viejo,,,Liquor,2
+menuItem,INDOOR DRINKS,Mezcal,,Vago Elote,,,Liquor,1
+menuItem,INDOOR DRINKS,Mezcal,,Vago Ensamble en Barro,,,Liquor,1
+menuItem,INDOOR DRINKS,Mezcal,,Wahaka Ensamble,,,Liquor,1
+menuItem,INDOOR DRINKS,Mezcal,,Yuu Baal Espadin Joven,,,Liquor,1
+menuItem,INDOOR DRINKS,Mezcal,,Bozal Ensamble,,,Liquor,3
+menuItem,INDOOR DRINKS,Mezcal,,Bozal Tepeztate,,,Liquor,2
+,INDOOR DRINKS,Flights,,,,,,65
+menuItem,INDOOR DRINKS,Flights,,La Altena Distillery Highland Flight,,,Liquor,7
+menuItem,INDOOR DRINKS,Flights,,Producciónchiquito Flight,,,Liquor,23
+menuItem,INDOOR DRINKS,Flights,,Maguey Espadin Flight,,,Liquor,20
+menuItem,INDOOR DRINKS,Flights,,Pa'El Viajero Flight,,,Liquor,15
+,INDOOR DRINKS,NA Beverages,,,,,,741
+menuItem,INDOOR DRINKS,NA Beverages,,Agua Fresca Hibiscus Limeade,,,NA Beverage,165
+menuItem,INDOOR DRINKS,NA Beverages,,Agua Fresca Horchata,,,NA Beverage,146
+menuItem,INDOOR DRINKS,NA Beverages,,Agua Fresca Orange Pineapple Ginger,,,NA Beverage,44
+menuItem,INDOOR DRINKS,NA Beverages,,Agua Fresca Watermelon mint,,,NA Beverage,83
+menuItem,INDOOR DRINKS,NA Beverages,,Limeade,,,NA Beverage,3
+menuItem,INDOOR DRINKS,NA Beverages,,Diet Coke,,,NA Beverage,95
+menuItem,INDOOR DRINKS,NA Beverages,,Coke,,,NA Beverage,46
+menuItem,INDOOR DRINKS,NA Beverages,,Club Soda,,,NA Beverage,10
+menuItem,INDOOR DRINKS,NA Beverages,,Q Ginger Beer,,,NA Beverage,5
+menuItem,INDOOR DRINKS,NA Beverages,,Virgin Mojito,,,NA Beverage,5
+menuItem,INDOOR DRINKS,NA Beverages,,Virgin Margarita,,,NA Beverage,21
+menuItem,INDOOR DRINKS,NA Beverages,,Proyecto Diaz Coffee,,,NA Beverage,77
+menuItem,INDOOR DRINKS,NA Beverages,,Teance Hot Tea,,,NA Beverage,41
+,INDOOR DRINKS,Draft Beer,,,,,,734
+menuItem,INDOOR DRINKS,Draft Beer,,Fieldwork IPA 10oz,,,Beer,24
+menuItem,INDOOR DRINKS,Draft Beer,,Fieldwork IPA 16oz,,,Beer,192
+menuItem,INDOOR DRINKS,Draft Beer,,Dad Pants Pilsner 10oz.,,,Beer,46
+menuItem,INDOOR DRINKS,Draft Beer,,Dad Pants Pilsner 16oz.,,,Beer,120
+menuItem,INDOOR DRINKS,Draft Beer,,Coal Shed Stout 10oz,,,Beer,13
+menuItem,INDOOR DRINKS,Draft Beer,,Coal Shed Stout 16oz,,,Beer,24
+menuItem,INDOOR DRINKS,Draft Beer,,Blossom Bliss Hazy 10oz,,,Beer,5
+menuItem,INDOOR DRINKS,Draft Beer,,Blossom Bliss Hazy 16oz,,,Beer,17
+menuItem,INDOOR DRINKS,Draft Beer,,The 21ers Black Lager 16oz,,,Beer,1
+menuItem,INDOOR DRINKS,Draft Beer,,Low Motion 10oz,,,Beer,1
+menuItem,INDOOR DRINKS,Draft Beer,,Low Motion 16oz,,,Beer,9
+menuItem,INDOOR DRINKS,Draft Beer,,Socks & Sandals Hazy IPA 10oz,,,Beer,7
+menuItem,INDOOR DRINKS,Draft Beer,,Socks & Sandals Hazy IPA 16oz,,,Beer,89
+menuItem,INDOOR DRINKS,Draft Beer,,Morena Mia Lager 10oz,,,Beer,23
+menuItem,INDOOR DRINKS,Draft Beer,,Morena Mia Lager 16oz,,,Beer,77
+menuItem,INDOOR DRINKS,Draft Beer,,Fathers American Lager 10oz,,,Beer,16
+menuItem,INDOOR DRINKS,Draft Beer,,Fathers American Lager 16oz,,,Beer,32
+menuItem,INDOOR DRINKS,Draft Beer,,Kookslayer Amber ale 10oz,,,Beer,3
+menuItem,INDOOR DRINKS,Draft Beer,,Kookslayer Amber ale 16oz,,,Beer,2
+menuItem,INDOOR DRINKS,Draft Beer,,Euphoria Hazy Pale Ale 10oz,,,Beer,11
+menuItem,INDOOR DRINKS,Draft Beer,,Euphoria Hazy Pale Ale 16oz,,,Beer,19
+menuItem,INDOOR DRINKS,Draft Beer,,Blossom Bliss 16oz,,,Beer,3
+,INDOOR DRINKS,Bottled Beer,,,,,,116
+menuItem,INDOOR DRINKS,Bottled Beer,,Modelo,,,Beer,55
+menuItem,INDOOR DRINKS,Bottled Beer,,Fieldwork N/A,,,Beer,45
+menuItem,INDOOR DRINKS,Bottled Beer,,Bohemia,,,Beer,13
+menuItem,INDOOR DRINKS,Bottled Beer,,Fieldwork Can,,,Beer,3
+,INDOOR DRINKS,Wine Glass,,,,,,444
+menuItem,INDOOR DRINKS,Wine Glass,,Gls Prosecco,,,Wine,10
+menuItem,INDOOR DRINKS,Wine Glass,,Gls Jane Ventura Cava,,,Wine,19
+menuItem,INDOOR DRINKS,Wine Glass,,Gls Haut Bourg Rose,,,Wine,23.5
+menuItem,INDOOR DRINKS,Wine Glass,,Gls Ariddu Grillo,,,Wine,40
+menuItem,INDOOR DRINKS,Wine Glass,,Gls Monte Pio Albariño,,,Wine,15
+menuItem,INDOOR DRINKS,Wine Glass,,Gls Bennet Valley Chard,,,Wine,61
+menuItem,INDOOR DRINKS,Wine Glass,,Gls Francois Chidaine Sauv Blanc,,,Wine,102
+menuItem,INDOOR DRINKS,Wine Glass,,Gls Argyle Pinot Noir,,,Wine,49.5
+menuItem,INDOOR DRINKS,Wine Glass,,Gls Sinegal Cabernet,,,Wine,38
+menuItem,INDOOR DRINKS,Wine Glass,,Gls Iriarte Tempranillo,,,Wine,28
+menuItem,INDOOR DRINKS,Wine Glass,,Gls State Street Syrah,,,Wine,35
+menuItem,INDOOR DRINKS,Wine Glass,,Gls Malcaracter Tempranillo,,,Wine,23
+,INDOOR DRINKS,Wine Bottle,,,,,,78
+menuItem,INDOOR DRINKS,Wine Bottle,,CORKAGE,,,Wine,8
+menuItem,INDOOR DRINKS,Wine Bottle,,Btl Jane Ventura Cava,,,Wine,9
+menuItem,INDOOR DRINKS,Wine Bottle,,Btl Cantina Da Pra Prosecco,,,Wine,5
+menuItem,INDOOR DRINKS,Wine Bottle,,Btl Grolleau Rose,,,Wine,4
+menuItem,INDOOR DRINKS,Wine Bottle,,Btl Ariddu Grillo,,,Wine,6
+menuItem,INDOOR DRINKS,Wine Bottle,,Btl Monte Pio Albariño,,,Wine,1
+menuItem,INDOOR DRINKS,Wine Bottle,,Btl Bennet Valley Chard,,,Wine,7
+menuItem,INDOOR DRINKS,Wine Bottle,,Btl Francois Chidaine Sauv Blanc,,,Wine,15
+menuItem,INDOOR DRINKS,Wine Bottle,,Btl Argyle Pinot Noir,,,Wine,11
+menuItem,INDOOR DRINKS,Wine Bottle,,Btl Finca Iriarte Tempranillo,,,Wine,2
+menuItem,INDOOR DRINKS,Wine Bottle,,Btl Sinegal Cabernet,,,Wine,4
+menuItem,INDOOR DRINKS,Wine Bottle,,Btl State Street Syrah,,,Wine,2
+menuItem,INDOOR DRINKS,Wine Bottle,,Btl Malcaracter Tempranillo,,,Wine,4
+,INDOOR DRINKS,Gin,,,,,,32
+menuItem,INDOOR DRINKS,Gin,,Well Gin City of London,,,Liquor,12
+menuItem,INDOOR DRINKS,Gin,,Hendricks,,,Liquor,14
+menuItem,INDOOR DRINKS,Gin,,Tanqueray,,,Liquor,2
+menuItem,INDOOR DRINKS,Gin,,St. George Botanivore,,,Liquor,4
+,INDOOR DRINKS,Liquers,,,,,,7
+menuItem,INDOOR DRINKS,Liquers,,Campari,,,Liquor,1
+menuItem,INDOOR DRINKS,Liquers,,Fernet Branca,,,Liquor,1
+menuItem,INDOOR DRINKS,Liquers,,Grand Marnier,,,Liquor,2
+menuItem,INDOOR DRINKS,Liquers,,Amaro Montenegro,,,Liquor,3
+,INDOOR DRINKS,Rum,,,,,,8
+menuItem,INDOOR DRINKS,Rum,,Well Rum Royal Standards,,,Liquor,6
+menuItem,INDOOR DRINKS,Rum,,Pampero Aniversario,,,Liquor,2
+,INDOOR DRINKS,Scotch,,,,,,1
+menuItem,INDOOR DRINKS,Scotch,,Dalmore 12,,,Liquor,1
+,INDOOR DRINKS,Vodka,,,,,,46
+menuItem,INDOOR DRINKS,Vodka,,Ketel One,,,Liquor,15
+menuItem,INDOOR DRINKS,Vodka,,Hangar One,,,Liquor,3
+menuItem,INDOOR DRINKS,Vodka,,Grey Goose,,,Liquor,10
+menuItem,INDOOR DRINKS,Vodka,,Well Vodka Rigby,,,Liquor,17
+menuItem,INDOOR DRINKS,Vodka,,All Purpose Vodka,,,Liquor,1
+,INDOOR DRINKS,Whiskey,,,,,,33
+menuItem,INDOOR DRINKS,Whiskey,,Well Rye Old Overholt Rye,,,Liquor,8
+menuItem,INDOOR DRINKS,Whiskey,,Jameson,,,Liquor,7
+menuItem,INDOOR DRINKS,Whiskey,,Maker’s Mark,,,Liquor,12
+menuItem,INDOOR DRINKS,Whiskey,,Home Base Bourbon,,,Liquor,5
+menuItem,INDOOR DRINKS,Whiskey,,Michter's Bourbon,,,Liquor,1
+,PATIO DRINKS,,,,,,,7746
+,PATIO DRINKS,House Cocktails,,,,,,4577.5
+menuItem,PATIO DRINKS,House Cocktails,,Margarita,,,Liquor,1505
+menuItem,PATIO DRINKS,House Cocktails,,Mezcal Margarita,,,Liquor,197
+menuItem,PATIO DRINKS,House Cocktails,,Cadillac Margarita,,,Liquor,39
+menuItem,PATIO DRINKS,House Cocktails,,Palomaesque,,,Liquor,397
+menuItem,PATIO DRINKS,House Cocktails,,The Comal Swizzle,,,Liquor,447.5
+menuItem,PATIO DRINKS,House Cocktails,,Cocktail Al Pastor,,,Liquor,129
+menuItem,PATIO DRINKS,House Cocktails,,El Chavo,,,Liquor,171
+menuItem,PATIO DRINKS,House Cocktails,,Summer Camp,,,Liquor,103
+menuItem,PATIO DRINKS,House Cocktails,,Jack Satan,,,Liquor,464
+menuItem,PATIO DRINKS,House Cocktails,,Joaquin Murrieta,,,Liquor,178
+menuItem,PATIO DRINKS,House Cocktails,,Abuelo Sucio,,,Liquor,283
+menuItem,PATIO DRINKS,House Cocktails,,Michelada,,,Liquor,27
+menuItem,PATIO DRINKS,House Cocktails,,La Maravilla,,,Liquor,78
+menuItem,PATIO DRINKS,House Cocktails,,Pucker Punch,,,NA Beverage,172
+menuItem,PATIO DRINKS,House Cocktails,,Jolly Ranchero,,,Liquor,85
+menuItem,PATIO DRINKS,House Cocktails,,Margarita (zero proof),,,Liquor,94
+menuItem,PATIO DRINKS,House Cocktails,,Mexican Coffee,,,Liquor,24
+menuItem,PATIO DRINKS,House Cocktails,,Agua Fresca Con Carne,,,Liquor,11
+menuItem,PATIO DRINKS,House Cocktails,,Matt's Cocktail,,,Liquor,74
+menuItem,PATIO DRINKS,House Cocktails,,Side of Limes,,,Liquor,2
+menuItem,PATIO DRINKS,House Cocktails,,Quince Essential,,,Liquor,80
+menuItem,PATIO DRINKS,House Cocktails,,Taste of...,,,Liquor,17
+,PATIO DRINKS,Classic Cocktails,,,,,,112
+menuItem,PATIO DRINKS,Classic Cocktails,,Daiquiri,,,Liquor,4
+menuItem,PATIO DRINKS,Classic Cocktails,,Dark $ Stormy,,,Liquor,1
+menuItem,PATIO DRINKS,Classic Cocktails,,French 75,,,Liquor,1
+menuItem,PATIO DRINKS,Classic Cocktails,,Hot Toddy,,,Liquor,2
+menuItem,PATIO DRINKS,Classic Cocktails,,Last Word,,,Liquor,7
+menuItem,PATIO DRINKS,Classic Cocktails,,Lemon Drop,,,Liquor,3
+menuItem,PATIO DRINKS,Classic Cocktails,,Manhattan,,,Liquor,3
+menuItem,PATIO DRINKS,Classic Cocktails,,Martini,,,Liquor,5
+menuItem,PATIO DRINKS,Classic Cocktails,,Mojito,,,Liquor,12
+menuItem,PATIO DRINKS,Classic Cocktails,,Moscow Mule,,,Liquor,8
+menuItem,PATIO DRINKS,Classic Cocktails,,Negroni,,,Liquor,14
+menuItem,PATIO DRINKS,Classic Cocktails,,Old Fashioned,,,Liquor,22
+menuItem,PATIO DRINKS,Classic Cocktails,,Paper Plane,,,Liquor,3
+menuItem,PATIO DRINKS,Classic Cocktails,,Sour,,,Liquor,4
+menuItem,PATIO DRINKS,Classic Cocktails,,White Russian,,,Liquor,1
+menuItem,PATIO DRINKS,Classic Cocktails,,Paloma,,,Liquor,19
+menuItem,PATIO DRINKS,Classic Cocktails,,Pisco Sour,,,Liquor,3
+,PATIO DRINKS,Tequila,,,,,,291
+,PATIO DRINKS,Tequila,Blanco,,,,,229
+menuItem,PATIO DRINKS,Tequila,Blanco,Well Tequila Gran Clásico Blanco,,,Liquor,147
+menuItem,PATIO DRINKS,Tequila,Blanco,Arette Suave Blanco,,,Liquor,12
+menuItem,PATIO DRINKS,Tequila,Blanco,ArteNOM Blanco,,,Liquor,1
+menuItem,PATIO DRINKS,Tequila,Blanco,Calle 23 Blanco,,,Liquor,2
+menuItem,PATIO DRINKS,Tequila,Blanco,Campo Azul 1940 blanco,,,Liquor,1
+menuItem,PATIO DRINKS,Tequila,Blanco,Corralejo Blanco,,,Liquor,1
+menuItem,PATIO DRINKS,Tequila,Blanco,Don Julio Blanco,,,Liquor,21
+menuItem,PATIO DRINKS,Tequila,Blanco,El Tesoro Blanco,,,Liquor,4
+menuItem,PATIO DRINKS,Tequila,Blanco,Espolon Blanco,,,Liquor,3
+menuItem,PATIO DRINKS,Tequila,Blanco,Fortaleza Blanco,,,Liquor,17
+menuItem,PATIO DRINKS,Tequila,Blanco,G4 Blanco,,,Liquor,4
+menuItem,PATIO DRINKS,Tequila,Blanco,Lalo Blanco,,,Liquor,2
+menuItem,PATIO DRINKS,Tequila,Blanco,Siete Leguas Blanco,,,Liquor,5
+menuItem,PATIO DRINKS,Tequila,Blanco,Tapatio Blanco,,,Liquor,2
+menuItem,PATIO DRINKS,Tequila,Blanco,Tequila Ocho Plata,,,Liquor,7
+,PATIO DRINKS,Tequila,Reposado,,,,,49
+menuItem,PATIO DRINKS,Tequila,Reposado,Well Tequila Reposado,,,Liquor,9
+menuItem,PATIO DRINKS,Tequila,Reposado,Calle 23 Reposado,,,Liquor,2
+menuItem,PATIO DRINKS,Tequila,Reposado,Don Julio Reposado,,,Liquor,4
+menuItem,PATIO DRINKS,Tequila,Reposado,El Tesoro Reposado,,,Liquor,4
+menuItem,PATIO DRINKS,Tequila,Reposado,Espolon Reposado,,,Liquor,5
+menuItem,PATIO DRINKS,Tequila,Reposado,Excellia Reposado,,,Liquor,1
+menuItem,PATIO DRINKS,Tequila,Reposado,Fortaleza Reposado,,,Liquor,1
+menuItem,PATIO DRINKS,Tequila,Reposado,G4 Reposado,,,Liquor,6
+menuItem,PATIO DRINKS,Tequila,Reposado,Pueblo Viejo Reposado,,,Liquor,2
+menuItem,PATIO DRINKS,Tequila,Reposado,Siete Leguas Reposado,,,Liquor,6
+menuItem,PATIO DRINKS,Tequila,Reposado,Tequila Ocho Reposado,,,Liquor,9
+,PATIO DRINKS,Tequila,Anejo,,,,,13
+menuItem,PATIO DRINKS,Tequila,Anejo,ArteNOM Anejo,,,Liquor,2
+menuItem,PATIO DRINKS,Tequila,Anejo,Casa Noble Anejo,,,Liquor,1
+menuItem,PATIO DRINKS,Tequila,Anejo,Excellia Anejo,,,Liquor,1
+menuItem,PATIO DRINKS,Tequila,Anejo,Fortaleza Anejo,,,Liquor,0
+menuItem,PATIO DRINKS,Tequila,Anejo,Siete Leguas Anejo,,,Liquor,5
+menuItem,PATIO DRINKS,Tequila,Anejo,Tequila Ocho Anejo,,,Liquor,4
+,PATIO DRINKS,Mezcal,,,,,,108
+menuItem,PATIO DRINKS,Mezcal,,Well Mezcal Rayu,,,Liquor,27
+menuItem,PATIO DRINKS,Mezcal,,Amaras Espadin,,,Liquor,5
+menuItem,PATIO DRINKS,Mezcal,,Amaras Verde Momento,,,Liquor,2
+menuItem,PATIO DRINKS,Mezcal,,Aqara Agave de los Andes Plateado,,,Liquor,4
+menuItem,PATIO DRINKS,Mezcal,,Banhez Tepeztate,,,Liquor,2
+menuItem,PATIO DRINKS,Mezcal,,Del Maguey Chichicapa,,,Liquor,1
+menuItem,PATIO DRINKS,Mezcal,,Del Maguey Minero,,,Liquor,2
+menuItem,PATIO DRINKS,Mezcal,,Del Maguey San Luis,,,Liquor,1
+menuItem,PATIO DRINKS,Mezcal,,Del Maguey Vida Espadin,,,Liquor,2
+menuItem,PATIO DRINKS,Mezcal,,Don Amado Rustico,,,Liquor,6
+menuItem,PATIO DRINKS,Mezcal,,Don Mateo Cupreata,,,Liquor,1
+menuItem,PATIO DRINKS,Mezcal,,El Mero Mero Espadin,,,Liquor,1
+menuItem,PATIO DRINKS,Mezcal,,Espina Negra Tepeztate,,,Liquor,3
+menuItem,PATIO DRINKS,Mezcal,,Espina Negra Tobala,,,Liquor,1
+menuItem,PATIO DRINKS,Mezcal,,Fidencio Tobalá,,,Liquor,2
+menuItem,PATIO DRINKS,Mezcal,,La Jicarita Pechuga,,,Liquor,1
+menuItem,PATIO DRINKS,Mezcal,,Madre Espadin y Cuixe Artesanal,,,Liquor,2
+menuItem,PATIO DRINKS,Mezcal,,Montelobos,,,Liquor,1
+menuItem,PATIO DRINKS,Mezcal,,Montelobos Tobala,,,Liquor,3
+menuItem,PATIO DRINKS,Mezcal,,Nuestra Soledad Santiago Matalan,,,Liquor,1
+menuItem,PATIO DRINKS,Mezcal,,Rey Campero Espadin,,,Liquor,1
+menuItem,PATIO DRINKS,Mezcal,,Rey Campero Jabalî,,,Liquor,4
+menuItem,PATIO DRINKS,Mezcal,,Rey Campero Madre Cuishe,,,Liquor,3
+menuItem,PATIO DRINKS,Mezcal,,Rey Campero Mexicano,,,Liquor,3
+menuItem,PATIO DRINKS,Mezcal,,Siete Misterios,,,Liquor,7
+menuItem,PATIO DRINKS,Mezcal,,Sotol Añejo,,,Liquor,1
+menuItem,PATIO DRINKS,Mezcal,,Sotol Reposado,,,Liquor,2
+menuItem,PATIO DRINKS,Mezcal,,Tepua Bacanora,,,Liquor,1
+menuItem,PATIO DRINKS,Mezcal,,Vago Cuixe,,,Liquor,1
+menuItem,PATIO DRINKS,Mezcal,,Vago Elote,,,Liquor,2
+menuItem,PATIO DRINKS,Mezcal,,Vago Espadín,,,Liquor,4
+menuItem,PATIO DRINKS,Mezcal,,Vago Madre Cuixe,,,Liquor,4
+menuItem,PATIO DRINKS,Mezcal,,Yuu Baal Pechuga,,,Liquor,3
+menuItem,PATIO DRINKS,Mezcal,,Yoowe Palmilla,,,Liquor,4
+,PATIO DRINKS,Flights,,,,,,80
+menuItem,PATIO DRINKS,Flights,,La Altena Distillery Highland Flight,,,Liquor,14
+menuItem,PATIO DRINKS,Flights,,Producciónchiquito Flight,,,Liquor,22
+menuItem,PATIO DRINKS,Flights,,Maguey Espadin Flight,,,Liquor,26
+menuItem,PATIO DRINKS,Flights,,Pa'El Viajero Flight,,,Liquor,18
+,PATIO DRINKS,NA Beverages,,,,,,728.5
+menuItem,PATIO DRINKS,NA Beverages,,Agua Fresca Hibiscus Limeade,,,NA Beverage,167
+menuItem,PATIO DRINKS,NA Beverages,,Agua Fresca Horchata,,,NA Beverage,99
+menuItem,PATIO DRINKS,NA Beverages,,Agua Fresca Watermelon mint,,,NA Beverage,90.5
+menuItem,PATIO DRINKS,NA Beverages,,Agua Fresca Orange Pineapple Ginger,,,NA Beverage,38
+menuItem,PATIO DRINKS,NA Beverages,,Diet Coke,,,NA Beverage,112
+menuItem,PATIO DRINKS,NA Beverages,,Coke,,,NA Beverage,58
+menuItem,PATIO DRINKS,NA Beverages,,Q Tonic Water,,,NA Beverage,8
+menuItem,PATIO DRINKS,NA Beverages,,Q Club Soda,,,NA Beverage,35
+menuItem,PATIO DRINKS,NA Beverages,,Q Ginger Beer,,,NA Beverage,11
+menuItem,PATIO DRINKS,NA Beverages,,Grapefruit Juice,,,NA Beverage,2
+menuItem,PATIO DRINKS,NA Beverages,,Virgin Mojito,,,NA Beverage,3
+menuItem,PATIO DRINKS,NA Beverages,,Virgin Margarita,,,NA Beverage,23
+menuItem,PATIO DRINKS,NA Beverages,,Sangrita Amarilla,,,NA Beverage,3
+menuItem,PATIO DRINKS,NA Beverages,,Proyecto Diaz Coffee,,,NA Beverage,46
+menuItem,PATIO DRINKS,NA Beverages,,Teance Hot Tea,,,NA Beverage,22
+menuItem,PATIO DRINKS,NA Beverages,,Limeade,,,NA Beverage,11
+,PATIO DRINKS,Draft Beer,,,,,,937
+menuItem,PATIO DRINKS,Draft Beer,,Fieldwork IPA 10oz,,,Beer,26
+menuItem,PATIO DRINKS,Draft Beer,,Fieldwork IPA 16oz,,,Beer,235
+menuItem,PATIO DRINKS,Draft Beer,,Dad Pants Pilsner 10oz.,,,Beer,33
+menuItem,PATIO DRINKS,Draft Beer,,Dad Pants Pilsner 16oz.,,,Beer,186
+menuItem,PATIO DRINKS,Draft Beer,,Coal Shed Stout 10oz,,,Beer,8
+menuItem,PATIO DRINKS,Draft Beer,,Coal Shed Stout 16oz,,,Beer,30
+menuItem,PATIO DRINKS,Draft Beer,,Blossom Bliss 16oz,,,Beer,25
+menuItem,PATIO DRINKS,Draft Beer,,Blossom Bliss 10oz,,,Beer,4
+menuItem,PATIO DRINKS,Draft Beer,,The 21ers Black Lager 10oz,,,Beer,1
+menuItem,PATIO DRINKS,Draft Beer,,Low Motion 10oz,,,Beer,7
+menuItem,PATIO DRINKS,Draft Beer,,Low Motion 16oz,,,Beer,49
+menuItem,PATIO DRINKS,Draft Beer,,Socks & Sandals Hazy IPA 10oz,,,Beer,13
+menuItem,PATIO DRINKS,Draft Beer,,Socks & Sandals Hazy IPA 16oz,,,Beer,97
+menuItem,PATIO DRINKS,Draft Beer,,Morena Mia Lager 10oz,,,Beer,21
+menuItem,PATIO DRINKS,Draft Beer,,Morena Mia Lager 16oz,,,Beer,95
+menuItem,PATIO DRINKS,Draft Beer,,Fathers American Lager 10oz,,,Beer,11
+menuItem,PATIO DRINKS,Draft Beer,,Fathers American Lager 16oz,,,Beer,57
+menuItem,PATIO DRINKS,Draft Beer,,Kookslayer Amber ale 10oz,,,Beer,1
+menuItem,PATIO DRINKS,Draft Beer,,Kookslayer Amber ale 16oz,,,Beer,4
+menuItem,PATIO DRINKS,Draft Beer,,Euphoria Hazy Pale Ale 10oz,,,Beer,5
+menuItem,PATIO DRINKS,Draft Beer,,Euphoria Hazy Pale Ale 16oz,,,Beer,29
+,PATIO DRINKS,Bottled Beer,,,,,,182
+menuItem,PATIO DRINKS,Bottled Beer,,Modelo,,,Beer,87
+menuItem,PATIO DRINKS,Bottled Beer,,Fieldwork N/A,,,Beer,54
+menuItem,PATIO DRINKS,Bottled Beer,,Bohemia,,,Beer,38
+menuItem,PATIO DRINKS,Bottled Beer,,Fieldwork Can,,,Beer,2
+menuItem,PATIO DRINKS,Bottled Beer,,Humble Sea Can,,,Beer,1
+,PATIO DRINKS,Wine Glass,,,,,,461.5
+menuItem,PATIO DRINKS,Wine Glass,,Gls Jane Ventura Cava,,,Wine,17
+menuItem,PATIO DRINKS,Wine Glass,,Gls Prosecco,,,Wine,17
+menuItem,PATIO DRINKS,Wine Glass,,Gls Haut Bourg Rose,,,Wine,46
+menuItem,PATIO DRINKS,Wine Glass,,Gls Ariddu Grillo,,,Wine,36
+menuItem,PATIO DRINKS,Wine Glass,,Gls Bennet Valley Chard,,,Wine,53.5
+menuItem,PATIO DRINKS,Wine Glass,,Gls Francois Chidaine Sauv Blanc,,,Wine,92
+menuItem,PATIO DRINKS,Wine Glass,,Gls Monte Pio Albariño,,,Wine,33
+menuItem,PATIO DRINKS,Wine Glass,,Gls Sinegal Cab,,,Wine,37
+menuItem,PATIO DRINKS,Wine Glass,,Gls Argyle Pinot Noir,,,Wine,60
+menuItem,PATIO DRINKS,Wine Glass,,Gls Iriarte Tempranillo,,,Wine,28
+menuItem,PATIO DRINKS,Wine Glass,,Gls State Street Syrah,,,Wine,29
+menuItem,PATIO DRINKS,Wine Glass,,Gls Malcaracter Tempranillo,,,Wine,13
+,PATIO DRINKS,Wine Bottle,,,,,,53
+menuItem,PATIO DRINKS,Wine Bottle,,CORKAGE,,,Wine,4
+menuItem,PATIO DRINKS,Wine Bottle,,Btl Cantina Da Pra Prosecco,,,Wine,15
+menuItem,PATIO DRINKS,Wine Bottle,,Btl Jane Ventura Cava,,,Wine,7
+menuItem,PATIO DRINKS,Wine Bottle,,Btl Grolleau Rose,,,Wine,1
+menuItem,PATIO DRINKS,Wine Bottle,,Btl Ariddu Grillo,,,Wine,2
+menuItem,PATIO DRINKS,Wine Bottle,,Btl Bennet Valley Chard,,,Wine,7
+menuItem,PATIO DRINKS,Wine Bottle,,Btl Monte Pio Albariño,,,Wine,1
+menuItem,PATIO DRINKS,Wine Bottle,,Btl Francois Chidaine Sauv Blanc,,,Wine,7
+menuItem,PATIO DRINKS,Wine Bottle,,Btl Argyle Pinot Noir,,,Wine,5
+menuItem,PATIO DRINKS,Wine Bottle,,Btl Sinegal Cabernet,,,Wine,3
+menuItem,PATIO DRINKS,Wine Bottle,,Btl State Street Syrah,,,Wine,1
+,PATIO DRINKS,Brandy,,,,,,2
+menuItem,PATIO DRINKS,Brandy,,Raynal Brandy,,,Liquor,2
+,PATIO DRINKS,Gin,,,,,,56
+menuItem,PATIO DRINKS,Gin,,Well Gin City of London,,,Liquor,37
+menuItem,PATIO DRINKS,Gin,,Hendricks,,,Liquor,13
+menuItem,PATIO DRINKS,Gin,,Tanqueray,,,Liquor,2
+menuItem,PATIO DRINKS,Gin,,St. George Dry Rye,,,Liquor,1
+menuItem,PATIO DRINKS,Gin,,St. George Botanivore,,,Liquor,2
+menuItem,PATIO DRINKS,Gin,,Monterey Pine Gin,,,Liquor,1
+,PATIO DRINKS,Liquers,,,,,,12
+menuItem,PATIO DRINKS,Liquers,,Aperol,,,Liquor,4
+menuItem,PATIO DRINKS,Liquers,,Chartreuse Yellow,,,Liquor,7
+menuItem,PATIO DRINKS,Liquers,,Grand Marnier,,,Liquor,1
+,PATIO DRINKS,Rum,,,,,,18
+menuItem,PATIO DRINKS,Rum,,Well Rum Royal Standards,,,Liquor,10
+menuItem,PATIO DRINKS,Rum,,Plantation Pineapple Rum,,,Liquor,1
+menuItem,PATIO DRINKS,Rum,,Bacardi Black,,,Liquor,3
+menuItem,PATIO DRINKS,Rum,,Diplomatico Reserva,,,Liquor,4
+,PATIO DRINKS,Scotch,,,,,,8
+menuItem,PATIO DRINKS,Scotch,,Highland Park,,,Liquor,1
+menuItem,PATIO DRINKS,Scotch,,Johnnie Walker Black Label,,,Liquor,2
+menuItem,PATIO DRINKS,Scotch,,Macallan 12,,,Liquor,2
+menuItem,PATIO DRINKS,Scotch,,Dalmore 12,,,Liquor,3
+,PATIO DRINKS,Vodka,,,,,,61
+menuItem,PATIO DRINKS,Vodka,,Grey Goose,,,Liquor,21
+menuItem,PATIO DRINKS,Vodka,,Ketel One,,,Liquor,9
+menuItem,PATIO DRINKS,Vodka,,St. George Green Chili,,,Liquor,0
+menuItem,PATIO DRINKS,Vodka,,Well Vodka Rigby,,,Liquor,30
+menuItem,PATIO DRINKS,Vodka,,All Purpose Vodka,,,Liquor,1
+,PATIO DRINKS,Whiskey,,,,,,48.5
+menuItem,PATIO DRINKS,Whiskey,,Crown Royal,,,Liquor,4
+menuItem,PATIO DRINKS,Whiskey,,Jack Daniels,,,Liquor,6
+menuItem,PATIO DRINKS,Whiskey,,Jameson,,,Liquor,24.5
+menuItem,PATIO DRINKS,Whiskey,,Maker’s Mark,,,Liquor,14
+,PATIO DRINKS,Drink Tickets,,,,,,10
+menuItem,PATIO DRINKS,Drink Tickets,,Drink Ticket - BEER,,,Beer,4
+menuItem,PATIO DRINKS,Drink Tickets,,Drink Ticket - COCKTAIL,,,Liquor,6
+,COMAL NEXT DOOR,,,,,,,8749
+,COMAL NEXT DOOR,Burritos,,,,,,2137
+menuItem,COMAL NEXT DOOR,Burritos,,CHORIZO BURRITO,,,Burritos,111
+menuItem,COMAL NEXT DOOR,Burritos,,CHICKEN BURRITO,,,Burritos,523
+menuItem,COMAL NEXT DOOR,Burritos,,CARNITAS BURRITO,,,Burritos,223
+menuItem,COMAL NEXT DOOR,Burritos,,RELLENO BURRITO,,,Burritos,157
+menuItem,COMAL NEXT DOOR,Burritos,,BEAN & CHEESE BURRITO,,,Burritos,279
+menuItem,COMAL NEXT DOOR,Burritos,,MUSHROOM AND SPINACH BURRITO,,,Burritos,61
+menuItem,COMAL NEXT DOOR,Burritos,,VEGGIE BURRITO,,,Burritos,182
+menuItem,COMAL NEXT DOOR,Burritos,,BEEF BURRITO,,,Burritos,181
+menuItem,COMAL NEXT DOOR,Burritos,,AL PASTOR BURRITO,,,Burritos,179
+menuItem,COMAL NEXT DOOR,Burritos,,TOFU BURRITO,,,Burritos,131
+menuItem,COMAL NEXT DOOR,Burritos,,CARNE ASADA STEAK BURRITO,,,Burritos,110
+,COMAL NEXT DOOR,Bowl,,,,,,888
+menuItem,COMAL NEXT DOOR,Bowl,,CHORIZO BOWL,,,Bowl,31
+menuItem,COMAL NEXT DOOR,Bowl,,CHICKEN BOWL,,,Bowl,277
+menuItem,COMAL NEXT DOOR,Bowl,,CARNITAS BOWL,,,Bowl,91
+menuItem,COMAL NEXT DOOR,Bowl,,VEGGIE BOWL,,,Bowl,102
+menuItem,COMAL NEXT DOOR,Bowl,,MUSHROOM AND SPINACH BOWL,,,Bowl,54
+menuItem,COMAL NEXT DOOR,Bowl,,BEEF BOWL,,,Bowl,73
+menuItem,COMAL NEXT DOOR,Bowl,,AL PASTOR BOWL,,,Bowl,73
+menuItem,COMAL NEXT DOOR,Bowl,,RELLENO BOWL,,,Bowl,69
+menuItem,COMAL NEXT DOOR,Bowl,,TOFU BOWL,,,Bowl,72
+menuItem,COMAL NEXT DOOR,Bowl,,CARNE ASADA STEAK BOWL,,,Bowl,46
+,COMAL NEXT DOOR,Tacos,,,,,,1858
+menuItem,COMAL NEXT DOOR,Tacos,,CHICKEN TACO,,,Tacos,487
+menuItem,COMAL NEXT DOOR,Tacos,,CARNITAS TACO,,,Tacos,341
+menuItem,COMAL NEXT DOOR,Tacos,,VEGGIE TACO,,,Tacos,136
+menuItem,COMAL NEXT DOOR,Tacos,,MUSHROOM AND SPINACH TACO,,,Tacos,106
+menuItem,COMAL NEXT DOOR,Tacos,,BEEF TACO,,,Tacos,221
+menuItem,COMAL NEXT DOOR,Tacos,,AL PASTOR TACO,,,Tacos,301
+menuItem,COMAL NEXT DOOR,Tacos,,TOFU TACO,,,Tacos,69
+menuItem,COMAL NEXT DOOR,Tacos,,CARNE ASADA STEAK TACO,,,Tacos,197
+,COMAL NEXT DOOR,Tortas,,,,,,222
+menuItem,COMAL NEXT DOOR,Tortas,,FRIED CHICKEN TORTA,,,Tortas,149
+menuItem,COMAL NEXT DOOR,Tortas,,ALBONDIGAS TORTA,,,Tortas,21
+menuItem,COMAL NEXT DOOR,Tortas,,MOLLETE,,,Tortas,26
+menuItem,COMAL NEXT DOOR,Tortas,,TORTA AL GUSTO,,,Tortas,26
+,COMAL NEXT DOOR,Mas,,,,,,1288
+menuItem,COMAL NEXT DOOR,Mas,,NEXT DOOR SALAD,,,Mas,196
+menuItem,COMAL NEXT DOOR,Mas,,JUAREZ SALAD,,,Mas,72
+menuItem,COMAL NEXT DOOR,Mas,,CHIPS & SALSAS,,,Mas,262
+menuItem,COMAL NEXT DOOR,Mas,,"CHIPS, SALSAS & GUAC",,,Mas,355
+menuItem,COMAL NEXT DOOR,Mas,,ELOTE,,,Mas,15
+menuItem,COMAL NEXT DOOR,Mas,,RICE & BEANS,,,Mas,77
+menuItem,COMAL NEXT DOOR,Mas,,MINI-QUESADILLAS,,,Mas,56
+menuItem,COMAL NEXT DOOR,Mas,,CHILE RELLENO,,,Mas,25
+menuItem,COMAL NEXT DOOR,Mas,,BOTTLE OF HOUSEMADE HABANERO-CARROT HOT SAUCE,,,Mas,7
+menuItem,COMAL NEXT DOOR,Mas,,SIDE ESCABECHE,,,Mas,4
+menuItem,COMAL NEXT DOOR,Mas,,SIDE OF BEANS,,,Mas,33
+menuItem,COMAL NEXT DOOR,Mas,,SIDE OF CREMA,,,Mas,9
+menuItem,COMAL NEXT DOOR,Mas,,SIDE OF GUAC,,,Mas,86
+menuItem,COMAL NEXT DOOR,Mas,,SIDE OF RICE,,,Mas,13
+menuItem,COMAL NEXT DOOR,Mas,,SIDE OF SALSA,,,Mas,9
+menuItem,COMAL NEXT DOOR,Mas,,SIDE OF TORTILLAS,,,Mas,22
+menuItem,COMAL NEXT DOOR,Mas,,Open Food,,,Mas,41
+menuItem,COMAL NEXT DOOR,Mas,,Side of Avocado,,,Mas,2
+menuItem,COMAL NEXT DOOR,Mas,,SIDE OF PICO,,,Mas,4
+,COMAL NEXT DOOR,SPECIALS,,,,,,719
+menuItem,COMAL NEXT DOOR,SPECIALS,,Caldo de Pollo,,,Mas,17
+menuItem,COMAL NEXT DOOR,SPECIALS,,Caldo Tlapeno,,,Mas,22
+menuItem,COMAL NEXT DOOR,SPECIALS,,Chicken Tinga Tostadas,,,Mas,20
+menuItem,COMAL NEXT DOOR,SPECIALS,,Churros,,,Mas,29
+menuItem,COMAL NEXT DOOR,SPECIALS,,Enchilada Suizas,,,Mas,35
+menuItem,COMAL NEXT DOOR,SPECIALS,,Enmoladas,,,Mas,20
+menuItem,COMAL NEXT DOOR,SPECIALS,,Gordita,,,Mas,14
+menuItem,COMAL NEXT DOOR,SPECIALS,,Make it Wet! Burrito,,,Mas,1
+menuItem,COMAL NEXT DOOR,SPECIALS,,NACHOS,,,Mas,43
+menuItem,COMAL NEXT DOOR,SPECIALS,,Pibil Tacos,,,Mas,27
+menuItem,COMAL NEXT DOOR,SPECIALS,,POZOLE ROJO PORK,,,Mas,28
+menuItem,COMAL NEXT DOOR,SPECIALS,,Quesabirria Tacos,,,Mas,24
+menuItem,COMAL NEXT DOOR,SPECIALS,,Shrimp & Cheese EMPANADAS,,,Mas,20
+menuItem,COMAL NEXT DOOR,SPECIALS,,Sopa Azteca,,,Mas,23
+menuItem,COMAL NEXT DOOR,SPECIALS,,Sopa de Albondigas,,,Mas,16
+menuItem,COMAL NEXT DOOR,SPECIALS,,Sopa Tarasca,,,Mas,6
+menuItem,COMAL NEXT DOOR,SPECIALS,,SUPER QUESADILLA,,,Mas,110
+menuItem,COMAL NEXT DOOR,SPECIALS,,TACOS DORADOS,,,Mas,59
+menuItem,COMAL NEXT DOOR,SPECIALS,,Torta Ahogado,,,Mas,3
+menuItem,COMAL NEXT DOOR,SPECIALS,,Torta di Milanesa,,,Mas,13
+menuItem,COMAL NEXT DOOR,SPECIALS,,Chicken Pozole Blanco,,,Mas,20
+menuItem,COMAL NEXT DOOR,SPECIALS,,Mexican Lime Carlota,,,Mas,60
+menuItem,COMAL NEXT DOOR,SPECIALS,,CARNE ASADA STEAK TACO,,,Mas,66
+menuItem,COMAL NEXT DOOR,SPECIALS,,CARNE ASADA STEAK BURRITO,,,Mas,35
+menuItem,COMAL NEXT DOOR,SPECIALS,,CARNE ASADA STEAK BOWL,,,Mas,8
+,COMAL NEXT DOOR,Dessert,,,,,,213
+menuItem,COMAL NEXT DOOR,Dessert,,MATT'S CHOCOLATE CHUNK COOKIE,,,Dessert,149
+menuItem,COMAL NEXT DOOR,Dessert,,CORNMEAL SHORTBREAD COOKIE W/LIME ZEST,,,Dessert,64
+,COMAL NEXT DOOR,Beer,,,,,,217
+menuItem,COMAL NEXT DOOR,Beer,,Lagunitas IPA,,,Beer,49
+menuItem,COMAL NEXT DOOR,Beer,,Modelo,,,Beer,99
+menuItem,COMAL NEXT DOOR,Beer,,Por Que No?,,,Beer,49
+menuItem,COMAL NEXT DOOR,Beer,,Tendu Dunnigan Hills Rosé,,,Beer,10
+menuItem,COMAL NEXT DOOR,Beer,,tendu dunnigan hills rosé,,,Beer,10
+,COMAL NEXT DOOR,Agua Fresca,,,,,,492
+menuItem,COMAL NEXT DOOR,Agua Fresca,,HIBISCUS LEMONADE,,,NA Beverage,156
+menuItem,COMAL NEXT DOOR,Agua Fresca,,HORCHATA,,,NA Beverage,154
+menuItem,COMAL NEXT DOOR,Agua Fresca,,ORANGE PINEAPPLE GINGER,,,NA Beverage,108
+menuItem,COMAL NEXT DOOR,Agua Fresca,,WATERMELON MINT,,,NA Beverage,74
+,COMAL NEXT DOOR,Soda,,,,,,586
+menuItem,COMAL NEXT DOOR,Soda,,Diet Coke,,,NA Beverage,201
+menuItem,COMAL NEXT DOOR,Soda,,Can Coke,,,NA Beverage,127
+menuItem,COMAL NEXT DOOR,Soda,,Squirt,,,NA Beverage,32
+menuItem,COMAL NEXT DOOR,Soda,,La Croix,,,NA Beverage,174
+menuItem,COMAL NEXT DOOR,Soda,,Sprite,,,NA Beverage,52
+,COMAL NEXT DOOR,COCKTAILS,,,,,,85
+menuItem,COMAL NEXT DOOR,COCKTAILS,,MARGARITA (16oz),,,Liquor,58
+menuItem,COMAL NEXT DOOR,COCKTAILS,,JACK SATAN (16oz),,,Liquor,15
+menuItem,COMAL NEXT DOOR,COCKTAILS,,PALOMAESQUE (16oz) Exclusive,,,Liquor,12
+,COMAL NEXT DOOR,CATERING (Requires 24 hours notice),,,,,,15
+menuItem,COMAL NEXT DOOR,CATERING (Requires 24 hours notice),,BURRITO BOWL KIT,,,Catering,1
+menuItem,COMAL NEXT DOOR,CATERING (Requires 24 hours notice),,TACO BAR KIT,,,Catering,2
+menuItem,COMAL NEXT DOOR,CATERING (Requires 24 hours notice),,NEXT DOOR SALAD,,,Catering,1
+menuItem,COMAL NEXT DOOR,CATERING (Requires 24 hours notice),,RED RICE,,,Catering,1
+menuItem,COMAL NEXT DOOR,CATERING (Requires 24 hours notice),,FRESH CHIPS & TWO SALSAS,,,Catering,2
+menuItem,COMAL NEXT DOOR,CATERING (Requires 24 hours notice),,HOUSEMADE TORTILLA CHIPS - 1 lb.,,,Catering,1
+menuItem,COMAL NEXT DOOR,CATERING (Requires 24 hours notice),,SIDE OF 20 CORN TORTILLAS,,,Catering,4
+menuItem,COMAL NEXT DOOR,CATERING (Requires 24 hours notice),,SIDE OF SALSA,,,Catering,2
+menuItem,COMAL NEXT DOOR,CATERING (Requires 24 hours notice),,CORNMEAL-LIME SHORTBREAD COOKIES,,,Catering,1
+,COMAL NEXT DOOR,CENAS TELEVISIONES,,,,,,29
+menuItem,COMAL NEXT DOOR,CENAS TELEVISIONES,,Frozen CHICKEN ENCHILADAS W/SALSA VERDE,,,Food,11
+menuItem,COMAL NEXT DOOR,CENAS TELEVISIONES,,"Frozen CORN, POTATO & CHARD ENCHILADAS",,,Food,6
+menuItem,COMAL NEXT DOOR,CENAS TELEVISIONES,,Frozen CHICKEN TAMALE W/MOLE NEGRO,,,Food,8
+menuItem,COMAL NEXT DOOR,CENAS TELEVISIONES,,"Frozen CORN, RAJAS & ZUCCHINI TAMALE",,,Food,4
+,COMAL NEXT DOOR ONLINE,,,,,,,0
+,COMAL NEXT DOOR ONLINE,BURRITOS,,,,,,0
+menuItem,COMAL NEXT DOOR ONLINE,BURRITOS,,BEAN & CHEESE BURRITO,,,Burritos,0
+,RETAIL,,,,,,,0
+,RETAIL,Donation,,,,,,0
+menuItem,RETAIL,Donation,,Donation,,,Retail,1
+,CATERING,,,,,,,406
+,CATERING,THANKSGIVING,,,,,,44
+menuItem,CATERING,THANKSGIVING,,THANKSGIVING TURKEY DINNER (serves 8-10),,,Catering,41
+menuItem,CATERING,THANKSGIVING,,TAMALES,,,Catering,3
+,CATERING,APPETIZERS,,,,,,45
+menuItem,CATERING,APPETIZERS,,"FRESH CHIPS, TWO SALSAS & GUACAMOLE",,,Catering,21
+menuItem,CATERING,APPETIZERS,,FRESH CHIPS & TWO SALSAS,,,Catering,4
+menuItem,CATERING,APPETIZERS,,NEXT DOOR SALAD,,,Catering,14
+menuItem,CATERING,APPETIZERS,,BEEF & PORK ALBONDIGAS (Meatballs in adobo),,,Catering,6
+,CATERING,KITS & TRAYS,,,,,,89
+menuItem,CATERING,KITS & TRAYS,,BURRITO BOWL KIT,,,Catering,36
+menuItem,CATERING,KITS & TRAYS,,TACO BAR KIT,,,Catering,35
+menuItem,CATERING,KITS & TRAYS,,CHICKEN ENCHILADAS,,,Catering,9
+menuItem,CATERING,KITS & TRAYS,,CHEESE ENCHILADAS,,,Catering,9
+,CATERING,SIDES,,,,,,173
+menuItem,CATERING,SIDES,,BEANS,,,Catering,21
+menuItem,CATERING,SIDES,,RED RICE,,,Catering,20
+menuItem,CATERING,SIDES,,SIDE OF GUACAMOLE,,,Catering,19
+menuItem,CATERING,SIDES,,SIDE OF CREMA,,,Catering,7
+menuItem,CATERING,SIDES,,SIDE OF SALSA,,,Catering,12
+menuItem,CATERING,SIDES,,HOUSEMADE HABANERO-CARROT HOTSAUCE (5oz bottle),,,Catering,3
+menuItem,CATERING,SIDES,,"HOUSE-PICKLED JALAPEÑOS, CARROTS & ONIONS",,,Catering,10
+menuItem,CATERING,SIDES,,HOUSEMADE TORTILLA CHIPS - 1 lb.,,,Catering,23
+menuItem,CATERING,SIDES,,SIDE OF 20 CORN TORTILLAS,,,Catering,37
+menuItem,CATERING,SIDES,,SIDE OF PROTEIN,,,Catering,21
+,CATERING,AGUAS & COCKTAILS,,,,,,7
+menuItem,CATERING,AGUAS & COCKTAILS,,AGUA FRESCA,,,Catering,3
+menuItem,CATERING,AGUAS & COCKTAILS,,MARGARITA (16oz),,,Liquor,2
+menuItem,CATERING,AGUAS & COCKTAILS,,JACK SATAN (16oz),,,Liquor,2
+,CATERING,COOKIES,,,,,,11
+menuItem,CATERING,COOKIES,,MATT'S CHOCOLATE CHUNK COOKIES,,,Catering,6
+menuItem,CATERING,COOKIES,,CORNMEAL-LIME SHORTBREAD COOKIES,,,Catering,5
+,CATERING,MAS,,,,,,37
+menuItem,CATERING,MAS,,COMPOSTABLE BOWLS - 10,,,Catering,2
+menuItem,CATERING,MAS,,SERVING SPOON,,,Catering,23
+menuItem,CATERING,MAS,,SERVING TONGS,,,Catering,12
+,Online Menu,,,,,,,23558
+,Online Menu,BURRITOS,,,,,,7990
+menuItem,Online Menu,BURRITOS,,CHORIZO BURRITO,,,Burritos,183
+menuItem,Online Menu,BURRITOS,,CHICKEN BURRITO,,,Burritos,2618
+menuItem,Online Menu,BURRITOS,,CARNITAS BURRITO,,,Burritos,832
+menuItem,Online Menu,BURRITOS,,RELLENO BURRITO,,,Burritos,311
+menuItem,Online Menu,BURRITOS,,BEAN & CHEESE BURRITO,,,Burritos,1865
+menuItem,Online Menu,BURRITOS,,MUSHROOM AND SPINACH BURRITO,,,Burritos,189
+menuItem,Online Menu,BURRITOS,,VEGGIE BURRITO,,,Burritos,655
+menuItem,Online Menu,BURRITOS,,BEEF BURRITO,,,Burritos,317
+menuItem,Online Menu,BURRITOS,,AL PASTOR BURRITO,,,Burritos,468
+menuItem,Online Menu,BURRITOS,,TOFU BURRITO,,,Burritos,213
+menuItem,Online Menu,BURRITOS,,CARNE ASADA STEAK BURRITO,,,Burritos,339
+,Online Menu,BOWLS,,,,,,2440
+menuItem,Online Menu,BOWLS,,CHORIZO BOWL,,,Bowl,52
+menuItem,Online Menu,BOWLS,,CHICKEN BOWL,,,Bowl,1094
+menuItem,Online Menu,BOWLS,,CARNITAS BOWL,,,Bowl,286
+menuItem,Online Menu,BOWLS,,VEGGIE BOWL,,,Bowl,249
+menuItem,Online Menu,BOWLS,,MUSHROOM AND SPINACH BOWL,,,Bowl,63
+menuItem,Online Menu,BOWLS,,BEEF BOWL,,,Bowl,131
+menuItem,Online Menu,BOWLS,,AL PASTOR BOWL,,,Bowl,173
+menuItem,Online Menu,BOWLS,,RELLENO BOWL,,,Bowl,67
+menuItem,Online Menu,BOWLS,,TOFU BOWL,,,Bowl,163
+menuItem,Online Menu,BOWLS,,CARNE ASADA STEAK BOWL,,,Bowl,162
+,Online Menu,TACOS,,,,,,2881
+menuItem,Online Menu,TACOS,,TACOS DORADOS,,,Tacos,322
+menuItem,Online Menu,TACOS,,CHICKEN TACO,,,Tacos,767
+menuItem,Online Menu,TACOS,,CARNITAS TACO,,,Tacos,474
+menuItem,Online Menu,TACOS,,VEGGIE TACO,,,Tacos,120
+menuItem,Online Menu,TACOS,,MUSHROOM AND SPINACH TACO,,,Tacos,74
+menuItem,Online Menu,TACOS,,BEEF TACO,,,Tacos,424
+menuItem,Online Menu,TACOS,,AL PASTOR TACO,,,Tacos,415
+menuItem,Online Menu,TACOS,,TOFU TACO,,,Tacos,45
+menuItem,Online Menu,TACOS,,CARNE ASADA STEAK TACO,,,Tacos,240
+,Online Menu,TORTAS & QUESADILLAS,,,,,,841
+menuItem,Online Menu,TORTAS & QUESADILLAS,,FRIED CHICKEN TORTA,,,Tortas,149
+menuItem,Online Menu,TORTAS & QUESADILLAS,,ALBONDIGAS TORTA,,,Tortas,31
+menuItem,Online Menu,TORTAS & QUESADILLAS,,TORTA AL GUSTO,,,Tortas,28
+menuItem,Online Menu,TORTAS & QUESADILLAS,,MOLLETE,,,Tortas,58
+menuItem,Online Menu,TORTAS & QUESADILLAS,,SUPER QUESADILLA,,,Tortas,199
+menuItem,Online Menu,TORTAS & QUESADILLAS,,MINI-QUESADILLAS,,,Tortas,376
+,Online Menu,SPECIALS,,,,,,490
+menuItem,Online Menu,SPECIALS,,Caldo de Pollo,,,Mas,16
+menuItem,Online Menu,SPECIALS,,Caldo Tlapeno,,,Mas,25
+menuItem,Online Menu,SPECIALS,,Chicken Pozole Blanco,,,Mas,12
+menuItem,Online Menu,SPECIALS,,Chicken Tinga Tostadas,,,Mas,26
+menuItem,Online Menu,SPECIALS,,Churros,,,Mas,58
+menuItem,Online Menu,SPECIALS,,Enchilada Suizas,,,Mas,20
+menuItem,Online Menu,SPECIALS,,Enmoladas,,,Mas,21
+menuItem,Online Menu,SPECIALS,,Gordita,,,Mas,12
+menuItem,Online Menu,SPECIALS,,Make it Wet! Burrito,,,Mas,13
+menuItem,Online Menu,SPECIALS,,Mexican Lime Carlota,,,Mas,87
+menuItem,Online Menu,SPECIALS,,Pibil Tacos,,,Mas,29
+menuItem,Online Menu,SPECIALS,,POZOLE ROJO PORK,,,Mas,14
+menuItem,Online Menu,SPECIALS,,Quesabirria Tacos,,,Mas,30
+menuItem,Online Menu,SPECIALS,,Shrimp & Cheese EMPANADAS,,,Mas,14
+menuItem,Online Menu,SPECIALS,,Sopa Azteca,,,Mas,13
+menuItem,Online Menu,SPECIALS,,Sopa de Albondigas,,,Mas,16
+menuItem,Online Menu,SPECIALS,,Sopa Tarasca,,,Mas,12
+menuItem,Online Menu,SPECIALS,,Torta Ahogado,,,Mas,7
+menuItem,Online Menu,SPECIALS,,Torta di Milanesa,,,Mas,5
+menuItem,Online Menu,SPECIALS,,CARNE ASADA STEAK TACO,,,Mas,30
+menuItem,Online Menu,SPECIALS,,CARNE ASADA STEAK BURRITO,,,Mas,22
+menuItem,Online Menu,SPECIALS,,CARNE ASADA STEAK BOWL,,,Mas,8
+,Online Menu,MAS,,,,,,7333
+menuItem,Online Menu,MAS,,CHIPS & SALSAS,,,Mas,1107
+menuItem,Online Menu,MAS,,"CHIPS, SALSAS & GUAC",,,Mas,1535
+menuItem,Online Menu,MAS,,JUAREZ SALAD,,,Mas,150
+menuItem,Online Menu,MAS,,NEXT DOOR SALAD,,,Mas,590
+menuItem,Online Menu,MAS,,CHILE RELLENO,,,Mas,38
+menuItem,Online Menu,MAS,,NACHOS,,,Mas,218
+menuItem,Online Menu,MAS,,RICE & BEANS,,,Mas,686
+menuItem,Online Menu,MAS,,ELOTE,,,Mas,215
+menuItem,Online Menu,MAS,,SIDE OF BEANS,,,Mas,231
+menuItem,Online Menu,MAS,,SIDE OF RICE,,,Mas,169
+menuItem,Online Menu,MAS,,SIDE OF CHEESE,,,Mas,27
+menuItem,Online Menu,MAS,,SIDE OF CREMA,,,Mas,113
+menuItem,Online Menu,MAS,,SIDE OF GUAC,,,Mas,314
+menuItem,Online Menu,MAS,,SIDE OF SALSA,,,Mas,840
+menuItem,Online Menu,MAS,,SIDE ESCABECHE,,,Mas,328
+menuItem,Online Menu,MAS,,SIDE OF TORTILLAS,,,Mas,164
+menuItem,Online Menu,MAS,,BOTTLE OF HOUSEMADE HABANERO-CARROT HOT SAUCE,,,Mas,41
+menuItem,Online Menu,MAS,,CORNMEAL SHORTBREAD COOKIE W/LIME ZEST,,,Mas,147
+menuItem,Online Menu,MAS,,MATT'S CHOCOLATE CHUNK COOKIE,,,Mas,420
+,Online Menu,CENAS TELEVISIONES (frozen dinner) includes rice and beans,,,,,,151
+menuItem,Online Menu,CENAS TELEVISIONES (frozen dinner) includes rice and beans,,Frozen CHICKEN ENCHILADAS W/SALSA VERDE,,,Food,74
+menuItem,Online Menu,CENAS TELEVISIONES (frozen dinner) includes rice and beans,,"Frozen CORN, POTATO & CHARD ENCHILADAS",,,Food,33
+menuItem,Online Menu,CENAS TELEVISIONES (frozen dinner) includes rice and beans,,Frozen CHICKEN TAMALE W/MOLE NEGRO,,,Food,32
+menuItem,Online Menu,CENAS TELEVISIONES (frozen dinner) includes rice and beans,,"Frozen CORN, RAJAS & ZUCCHINI TAMALE",,,Food,12
+,Online Menu,HOUSEMADE BEVERAGES,,,,,,914
+menuItem,Online Menu,HOUSEMADE BEVERAGES,,HIBISCUS LEMONADE,,,NA Beverage,393
+menuItem,Online Menu,HOUSEMADE BEVERAGES,,HORCHATA,,,NA Beverage,241
+menuItem,Online Menu,HOUSEMADE BEVERAGES,,WATERMELON MINT,,,NA Beverage,130
+menuItem,Online Menu,HOUSEMADE BEVERAGES,,ORANGE PINEAPPLE GINGER,,,NA Beverage,150
+,Online Menu,COCKTAILS,,,,,,243
+menuItem,Online Menu,COCKTAILS,,MARGARITA (16oz),,,Liquor,133
+menuItem,Online Menu,COCKTAILS,,JACK SATAN (16oz),,,Liquor,55
+menuItem,Online Menu,COCKTAILS,,PALOMAESQUE (16oz) Exclusive,,,Liquor,55
+,Online Menu,WINE & BEER,,,,,,25
+menuItem,Online Menu,WINE & BEER,,Modelo,,,Beer,9
+menuItem,Online Menu,WINE & BEER,,Lagunitas IPA,,,Beer,6
+menuItem,Online Menu,WINE & BEER,,Por Que No?,,,Beer,6
+menuItem,Online Menu,WINE & BEER,,Tendu Dunnigan Hills Rosé,,,Beer,2
+menuItem,Online Menu,WINE & BEER,,tendu dunnigan hills rosé,,,Beer,2
+,Online Menu,SODA,,,,,,250
+menuItem,Online Menu,SODA,,Coca-Cola,,,NA Beverage,84
+menuItem,Online Menu,SODA,,Diet Coke,,,NA Beverage,104
+menuItem,Online Menu,SODA,,Squirt,,,Beer,29
+menuItem,Online Menu,SODA,,La Croix,,,Beer,33
+,Open items,,,,,,,128
+,Open items,CND Open Food,,,,,,17
+openItem,Open items,CND Open Food,,Carlota,,,Mas,1
+openItem,Open items,CND Open Food,,Doordash Price Difference,,,Mas,7
+openItem,Open items,CND Open Food,,Test,,,Mas,6
+,Open items,Open Beer,,,,,,1
+openItem,Open items,Open Beer,,Beer Dinner Beer,,,Beer,1
+,Open items,Open Beverage,,,,,,1
+openItem,Open items,Open Beverage,,Jack Satan Virgin For Back Bar!!,,,NA Beverage,1
+,Open items,Open Food,,,,,,70
+openItem,Open items,Open Food,,3 Barbacoa Quesadillas (Cut In 5),,,Food,1
+openItem,Open items,Open Food,,Abajo,,,Food,1
+openItem,Open items,Open Food,,Abajo Menu,,,Food,16
+openItem,Open items,Open Food,,BGD,,,Food,2
+openItem,Open items,Open Food,,Beer Dinner Beer,,,Food,1
+openItem,Open items,Open Food,,Beer Dinner Food,,,Food,2
+openItem,Open items,Open Food,,Beer Garden Dinner,,,Food,3
+openItem,Open items,Open Food,,Beer Garden Menu,,,Food,5
+openItem,Open items,Open Food,,Collard Greens Side Charge,,,Food,1
+openItem,Open items,Open Food,,Difference Charge 4 Mod,,,Food,0
+openItem,Open items,Open Food,,Full Buyout Menu,,,Food,1
+openItem,Open items,Open Food,,GCP,,,Food,1
+openItem,Open items,Open Food,,Garden Cocktail Menu,,,Food,2
+openItem,Open items,Open Food,,Hold Beans & Rice,,,Food,1
+openItem,Open items,Open Food,,Potatoes,,,Food,1
+openItem,Open items,Open Food,,Room Fee,,,Food,1
+openItem,Open items,Open Food,,Side Avocado,,,Food,1
+openItem,Open items,Open Food,,Side Of Avocado,,,Food,1
+openItem,Open items,Open Food,,Side Of Chicken,,,Food,1
+openItem,Open items,Open Food,,Side Of Sherry Vin,,,Food,1
+openItem,Open items,Open Food,,Sliced Avocado,,,Food,1
+openItem,Open items,Open Food,,Table 30 Deposit - Cancelled,,,Food,1
+openItem,Open items,Open Food,,Table 30 Dinner,,,Food,1
+openItem,Open items,Open Food,,Table 30 Menu,,,Food,11
+openItem,Open items,Open Food,,Taco Bar Menu,,,Food,6
+openItem,Open items,Open Food,,Test,,,Food,2
+openItem,Open items,Open Food,,Wedding,,,Food,2
+openItem,Open items,Open Food,,Wedding Food,,,Food,2
+,Open items,Open Indoor Wine,,,,,,7
+openItem,Open items,Open Indoor Wine,,Beer Garden Menu,,,Wine,1
+openItem,Open items,Open Indoor Wine,,Glass Of Ice Please,,,Wine,1
+openItem,Open items,Open Indoor Wine,,Sangrita Rojo,,,Wine,2
+openItem,Open items,Open Indoor Wine,,Side Jalapeneos,,,Wine,1
+openItem,Open items,Open Indoor Wine,,Table 30 Menu,,,Wine,1
+openItem,Open items,Open Indoor Wine,,Taco Bar Menu,,,Wine,1
+,Open items,Open Liquor,,,,,,16
+openItem,Open items,Open Liquor,,1oz Well Mezcal Rayu,,,Liquor,2
+openItem,Open items,Open Liquor,,Angels Envy,,,Liquor,1
+openItem,Open items,Open Liquor,,Glen Grant,,,Liquor,1
+openItem,Open items,Open Liquor,,Grey Goose,,,Liquor,1
+openItem,Open items,Open Liquor,,Hennessy,,,Liquor,2
+openItem,Open items,Open Liquor,,Hi,,,Liquor,1
+openItem,Open items,Open Liquor,,Sangrita Amarilla (16 ounces),,,Liquor,1
+openItem,Open items,Open Liquor,,Sangrita Roja (16 ounces),,,Liquor,1
+openItem,Open items,Open Liquor,,Sangrita Verde (16 ounces),,,Liquor,1
+openItem,Open items,Open Liquor,,Uruapan,,,Liquor,1
+openItem,Open items,Open Liquor,,Volcan Mi Tierra 2 Oz,,,Liquor,2
