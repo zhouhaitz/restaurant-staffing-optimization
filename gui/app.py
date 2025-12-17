@@ -39,6 +39,8 @@ from visualizations import (
     plot_throughput,
     plot_service_time_distribution,
     plot_current_state_gauges,
+    plot_dish_flow,
+    plot_kitchen_performance,
 )
 from animation_player import (
     AnimationPlayer,
@@ -209,8 +211,9 @@ def main():
     summary_stats = calculate_summary_statistics(snapshots)
     
     # Create tabs
-    tab1, tab2, tab3, tab4 = st.tabs([
+    tab1, tab2, tab3, tab4, tab5 = st.tabs([
         "📈 RevPASH & Revenue",
+        "🍳 Kitchen",
         "⚙️ Utilization",
         "🎬 Animation",
         "📋 Performance Summary"
@@ -265,8 +268,64 @@ def main():
                 use_container_width=True
             )
     
-    # Tab 2: Utilization Dashboard
+    # Tab 2: Kitchen Performance
     with tab2:
+        st.header("Kitchen Performance")
+        
+        # Kitchen KPIs
+        col1, col2, col3, col4 = st.columns(4)
+        
+        with col1:
+            st.metric(
+                "Avg Kitchen Time",
+                f"{summary_stats.get('avg_kitchen_time', 0):.1f} min",
+                help="Average time from order to all dishes ready at expo"
+            )
+        
+        with col2:
+            st.metric(
+                "Avg Order to Delivery",
+                f"{summary_stats.get('avg_order_to_delivery', 0):.1f} min",
+                help="Average time from order complete to first dish delivered"
+            )
+        
+        with col3:
+            st.metric(
+                "Total Dishes",
+                f"{summary_stats.get('total_dishes', 0)}"
+            )
+        
+        with col4:
+            st.metric(
+                "Dishes/Hour",
+                f"{summary_stats.get('dishes_per_hour', 0):.1f}"
+            )
+        
+        st.markdown("---")
+        
+        # Station utilization and queues
+        st.subheader("Station Performance")
+        st.plotly_chart(
+            plot_kitchen_performance(station_util_df),
+            use_container_width=True
+        )
+        
+        # Dish flow
+        st.subheader("Dish Flow Through System")
+        st.plotly_chart(
+            plot_dish_flow(throughput_df),
+            use_container_width=True
+        )
+        
+        # Station queues
+        st.subheader("Station Queue Depths")
+        st.plotly_chart(
+            plot_station_queues(queue_df),
+            use_container_width=True
+        )
+    
+    # Tab 3: Utilization Dashboard
+    with tab3:
         st.header("Utilization Dashboard")
         
         # Summary metrics
@@ -341,8 +400,8 @@ def main():
             use_container_width=True
         )
     
-    # Tab 3: Animation
-    with tab3:
+    # Tab 4: Animation
+    with tab4:
         st.header("System Animation")
         
         # Get current snapshot
@@ -352,10 +411,10 @@ def main():
             current_snapshot = player.get_current_snapshot()
             
             if current_snapshot:
-                # Current metrics
+                # Current metrics - expanded row
                 metrics = render_current_metrics(current_snapshot, total_seats)
                 
-                col1, col2, col3, col4, col5 = st.columns(5)
+                col1, col2, col3, col4, col5, col6 = st.columns(6)
                 
                 with col1:
                     st.metric("Time", metrics.get("time_formatted", "0m"))
@@ -366,7 +425,20 @@ def main():
                 with col4:
                     st.metric("Table Util", f"{metrics.get('table_utilization', 0) * 100:.0f}%")
                 with col5:
+                    st.metric("Station Util", f"{metrics.get('station_utilization', 0) * 100:.0f}%")
+                with col6:
                     st.metric("Parties", metrics.get("parties_in_system", 0))
+                
+                # Dish status row
+                col1, col2, col3, col4 = st.columns(4)
+                with col1:
+                    st.metric("🍳 Cooking", metrics.get("dishes_cooking", 0))
+                with col2:
+                    st.metric("✅ Ready", metrics.get("dishes_ready", 0))
+                with col3:
+                    st.metric("🚀 Deliveries", metrics.get("active_deliveries", 0))
+                with col4:
+                    st.metric("🍽️ Delivered", metrics.get("dishes_delivered", 0))
                 
                 st.markdown("---")
                 
@@ -388,11 +460,13 @@ def main():
                     )
                     
                     st.subheader("Queue Status")
-                    col_a, col_b = st.columns(2)
+                    col_a, col_b, col_c = st.columns(3)
                     with col_a:
-                        st.metric("Guest Queue", metrics.get("guest_queue", 0))
+                        st.metric("Guest", metrics.get("guest_queue", 0))
                     with col_b:
-                        st.metric("Expo Queue", metrics.get("expo_queue", 0))
+                        st.metric("Expo", metrics.get("expo_queue", 0))
+                    with col_c:
+                        st.metric("Runners", metrics.get("food_runner_queue", 0))
                 
                 # Party flow
                 st.subheader("Party Flow")
@@ -418,12 +492,12 @@ def main():
             else:
                 st.session_state.is_playing = False
     
-    # Tab 4: Performance Summary
-    with tab4:
+    # Tab 5: Performance Summary
+    with tab5:
         st.header("Performance Summary")
         
-        # Summary statistics
-        col1, col2, col3 = st.columns(3)
+        # Summary statistics - expanded to 4 columns
+        col1, col2, col3, col4 = st.columns(4)
         
         with col1:
             st.subheader("Revenue Metrics")
@@ -435,13 +509,19 @@ def main():
             st.subheader("Throughput Metrics")
             st.metric("Parties Served", summary_stats.get("parties_served", 0))
             st.metric("Parties/Hour", f"{summary_stats.get('parties_per_hour', 0):.1f}")
-            st.metric("Duration", f"{summary_stats.get('duration_hours', 0):.1f} hours")
+            st.metric("Dishes/Hour", f"{summary_stats.get('dishes_per_hour', 0):.1f}")
         
         with col3:
-            st.subheader("Utilization Metrics")
+            st.subheader("Kitchen Timing")
+            st.metric("Avg Kitchen Time", f"{summary_stats.get('avg_kitchen_time', 0):.1f} min")
+            st.metric("Avg Order→Delivery", f"{summary_stats.get('avg_order_to_delivery', 0):.1f} min")
+            st.metric("Avg Dining Time", f"{summary_stats.get('avg_dining_time', 0):.1f} min")
+        
+        with col4:
+            st.subheader("Utilization")
             st.metric("Avg Table Util", f"{summary_stats.get('avg_table_utilization', 0) * 100:.1f}%")
             st.metric("Avg Station Util", f"{summary_stats.get('avg_station_utilization', 0) * 100:.1f}%")
-            st.metric("Total Seats", summary_stats.get("total_seats", 0))
+            st.metric("Duration", f"{summary_stats.get('duration_hours', 0):.1f} hours")
         
         st.markdown("---")
         
@@ -461,26 +541,44 @@ def main():
                 use_container_width=True
             )
             
-            # Summary statistics for service times
-            col1, col2 = st.columns(2)
+            # Summary statistics for service times - expanded to 4 columns
+            col1, col2, col3, col4 = st.columns(4)
             
             with col1:
                 if service_times.get("wait_times"):
                     import numpy as np
                     wait_times = service_times["wait_times"]
-                    st.markdown("**Wait Times (Arrival to Seating)**")
-                    st.write(f"- Mean: {np.mean(wait_times):.1f} min")
-                    st.write(f"- Median: {np.median(wait_times):.1f} min")
-                    st.write(f"- Max: {np.max(wait_times):.1f} min")
+                    st.markdown("**Wait Times**")
+                    st.write(f"Mean: {np.mean(wait_times):.1f} min")
+                    st.write(f"Median: {np.median(wait_times):.1f} min")
+                    st.write(f"Max: {np.max(wait_times):.1f} min")
             
             with col2:
+                if service_times.get("kitchen_times"):
+                    import numpy as np
+                    kitchen_times = service_times["kitchen_times"]
+                    st.markdown("**Kitchen Times**")
+                    st.write(f"Mean: {np.mean(kitchen_times):.1f} min")
+                    st.write(f"Median: {np.median(kitchen_times):.1f} min")
+                    st.write(f"Max: {np.max(kitchen_times):.1f} min")
+            
+            with col3:
+                if service_times.get("dining_times"):
+                    import numpy as np
+                    dining_times = service_times["dining_times"]
+                    st.markdown("**Dining Times**")
+                    st.write(f"Mean: {np.mean(dining_times):.1f} min")
+                    st.write(f"Median: {np.median(dining_times):.1f} min")
+                    st.write(f"Max: {np.max(dining_times):.1f} min")
+            
+            with col4:
                 if service_times.get("total_times"):
                     import numpy as np
                     total_times = service_times["total_times"]
-                    st.markdown("**Total Times (Arrival to Departure)**")
-                    st.write(f"- Mean: {np.mean(total_times):.1f} min")
-                    st.write(f"- Median: {np.median(total_times):.1f} min")
-                    st.write(f"- Max: {np.max(total_times):.1f} min")
+                    st.markdown("**Total Times**")
+                    st.write(f"Mean: {np.mean(total_times):.1f} min")
+                    st.write(f"Median: {np.median(total_times):.1f} min")
+                    st.write(f"Max: {np.max(total_times):.1f} min")
         else:
             st.info("No completed parties in the simulation data")
 

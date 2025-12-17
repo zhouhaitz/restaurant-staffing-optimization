@@ -530,9 +530,12 @@ def plot_service_time_distribution(service_times: Dict[str, List[float]]) -> go.
     """
     time_types = [
         ("wait_times", "Wait Time (Arrival to Seating)", COLORS["primary"]),
-        ("order_to_delivery_times", "Order to Delivery", COLORS["secondary"]),
-        ("dining_times", "Dining Time", COLORS["warning"]),
-        ("total_times", "Total Time (Arrival to Departure)", COLORS["success"]),
+        ("seating_to_order_times", "Seating to Order Complete", COLORS["info"]),
+        ("kitchen_times", "Kitchen Time (Order to Dishes Ready)", COLORS["warning"]),
+        ("order_to_delivery_times", "Order to First Delivery", COLORS["secondary"]),
+        ("first_to_all_delivery_times", "First to All Dishes Delivered", COLORS["danger"]),
+        ("dining_times", "Dining Time", COLORS["success"]),
+        ("total_times", "Total Time (Arrival to Departure)", COLORS["dark"]),
     ]
     
     # Count how many have data
@@ -545,7 +548,7 @@ def plot_service_time_distribution(service_times: Dict[str, List[float]]) -> go.
     fig = make_subplots(
         rows=rows, cols=1,
         subplot_titles=[n for k, n, c in available],
-        vertical_spacing=0.1,
+        vertical_spacing=0.08,
     )
     
     for i, (key, name, color) in enumerate(available, 1):
@@ -564,7 +567,7 @@ def plot_service_time_distribution(service_times: Dict[str, List[float]]) -> go.
         fig.update_yaxes(title_text="Count", row=i, col=1)
     
     fig.update_layout(
-        height=200 * rows,
+        height=160 * rows,
         template="plotly_white",
     )
     
@@ -668,6 +671,118 @@ def plot_current_state_gauges(
         template="plotly_white",
         margin=dict(t=50, b=20),
     )
+    
+    return fig
+
+
+def plot_dish_flow(df: pd.DataFrame) -> go.Figure:
+    """Create a stacked area chart showing dish flow through the system.
+    
+    Args:
+        df: DataFrame with dish status columns over time
+        
+    Returns:
+        Plotly Figure object
+    """
+    if df.empty:
+        return _empty_figure("No dish data available")
+    
+    fig = go.Figure()
+    
+    dish_states = [
+        ("dishes_queued", "In Queue", COLORS["danger"]),
+        ("dishes_cooking", "Cooking", COLORS["warning"]),
+        ("dishes_delivered", "Delivered", COLORS["success"]),
+    ]
+    
+    for col, name, color in dish_states:
+        if col in df.columns:
+            fig.add_trace(go.Scatter(
+                x=df["time_hours"],
+                y=df[col],
+                mode="lines",
+                name=name,
+                line=dict(color=color, width=2),
+                fill="tonexty" if col != "dishes_queued" else "tozeroy",
+                stackgroup="one",
+            ))
+    
+    fig.update_layout(
+        title="Dish Flow Through Kitchen",
+        xaxis_title="Time (hours)",
+        yaxis_title="Number of Dishes",
+        template="plotly_white",
+        hovermode="x unified",
+        legend=dict(orientation="h", yanchor="bottom", y=1.02),
+    )
+    
+    return fig
+
+
+def plot_kitchen_performance(df: pd.DataFrame) -> go.Figure:
+    """Create a multi-panel chart showing kitchen performance metrics.
+    
+    Args:
+        df: DataFrame with station utilization and queue data
+        
+    Returns:
+        Plotly Figure object
+    """
+    if df.empty:
+        return _empty_figure("No kitchen data available")
+    
+    fig = make_subplots(
+        rows=2, cols=1,
+        subplot_titles=("Station Utilization", "Station Queues"),
+        vertical_spacing=0.15,
+    )
+    
+    # Find station utilization columns
+    util_cols = [c for c in df.columns if c.endswith("_utilization") and c != "overall_station_utilization"]
+    queue_cols = [c for c in df.columns if c.endswith("_queue") and not c.startswith(("guest", "host", "expo", "food_runner", "busser", "server"))]
+    
+    # Add utilization traces
+    for i, col in enumerate(util_cols):
+        station_name = col.replace("_utilization", "")
+        color = COLORS["station_colors"][i % len(COLORS["station_colors"])]
+        
+        fig.add_trace(
+            go.Scatter(
+                x=df["time_hours"],
+                y=df[col] * 100,
+                mode="lines",
+                name=station_name.replace("_", " ").title(),
+                line=dict(color=color, width=2),
+            ),
+            row=1, col=1
+        )
+    
+    # Add queue traces
+    for i, col in enumerate(queue_cols):
+        station_name = col.replace("_queue", "")
+        color = COLORS["station_colors"][i % len(COLORS["station_colors"])]
+        
+        fig.add_trace(
+            go.Scatter(
+                x=df["time_hours"],
+                y=df[col],
+                mode="lines",
+                name=station_name.replace("_", " ").title(),
+                line=dict(color=color, width=2),
+                showlegend=False,
+            ),
+            row=2, col=1
+        )
+    
+    fig.update_layout(
+        height=500,
+        template="plotly_white",
+        legend=dict(orientation="h", yanchor="bottom", y=1.02),
+    )
+    
+    fig.update_yaxes(title_text="Utilization %", row=1, col=1, range=[0, 105])
+    fig.update_yaxes(title_text="Queue Length", row=2, col=1)
+    fig.update_xaxes(title_text="Time (hours)", row=2, col=1)
     
     return fig
 

@@ -38,8 +38,10 @@ STATUS_COLORS = {
     "deciding": "#17A2B8",           # Cyan
     "ordering": "#6F42C1",           # Purple
     "waiting_for_food": "#FD7E14",   # Orange
+    "receiving_food": "#9B59B6",     # Purple - receiving dishes (some delivered)
     "dining": "#28A745",             # Green
     "paying": "#20C997",             # Teal
+    "cleaning": "#F18F01",           # Orange
     "departed": "#6C757D",           # Gray
     
     # Dish statuses
@@ -53,6 +55,10 @@ STATUS_COLORS = {
     # Station status
     "busy": "#DC3545",
     "idle": "#28A745",
+    
+    # Cook status
+    "cook_busy": "#DC3545",
+    "cook_idle": "#28A745",
 }
 
 
@@ -381,7 +387,7 @@ def render_station_status(
 def render_party_flow(
     snapshot: Dict,
     width: int = 800,
-    height: int = 200
+    height: int = 250
 ) -> go.Figure:
     """Render party flow through the restaurant as a funnel/sankey diagram.
     
@@ -398,25 +404,49 @@ def render_party_flow(
     
     parties = snapshot.get("parties", [])
     
-    # Count parties by status
+    # Count parties by status, with additional breakdown for food delivery
     status_counts = {}
+    receiving_food_count = 0  # Parties with some dishes delivered but not all
+    
     for party in parties:
         status = party.get("status", "unknown")
+        
+        # Check if party is receiving food (some dishes delivered, not all)
+        dishes_delivered = party.get("dishes_delivered_count", 0)
+        total_dishes = party.get("total_dishes", 0)
+        
+        if status == "waiting_for_food" and dishes_delivered > 0 and dishes_delivered < total_dishes:
+            status = "receiving_food"
+        
         status_counts[status] = status_counts.get(status, 0) + 1
     
-    # Define flow stages
+    # Define flow stages (updated with new states)
     stages = [
         "waiting_for_table",
         "being_seated",
         "deciding",
         "ordering",
         "waiting_for_food",
+        "receiving_food",
         "dining",
         "paying",
+        "cleaning",
         "departed",
     ]
     
-    stage_labels = [s.replace("_", " ").title() for s in stages]
+    stage_labels = [
+        "Waiting for Table",
+        "Being Seated",
+        "Deciding",
+        "Ordering",
+        "Waiting for Food",
+        "Receiving Food",
+        "Dining",
+        "Paying",
+        "Cleaning",
+        "Departed",
+    ]
+    
     counts = [status_counts.get(s, 0) for s in stages]
     colors = [STATUS_COLORS.get(s, "#6C757D") for s in stages]
     
@@ -475,6 +505,24 @@ def render_current_metrics(
     # Queue lengths
     guest_queue = snapshot.get("guest_queue_length", 0)
     expo_queue = snapshot.get("expo_queue_length", 0)
+    food_runner_queue = snapshot.get("food_runner_queue", 0)
+    
+    # Dish counts
+    dishes = snapshot.get("dishes", [])
+    dishes_cooking = sum(1 for d in dishes if d.get("status") == "cooking")
+    dishes_ready = sum(1 for d in dishes if d.get("status") in ["ready", "expo_check", "expo_queue"])
+    dishes_delivered = sum(1 for d in dishes if d.get("status") == "delivered")
+    total_dishes = len(dishes)
+    
+    # Station utilization
+    stations = snapshot.get("stations", [])
+    total_station_busy = sum(s.get("busy_slots", 0) for s in stations)
+    total_station_capacity = sum(s.get("capacity", 1) for s in stations)
+    station_util = safe_divide(total_station_busy, total_station_capacity, 0)
+    
+    # Active delivery tasks
+    tasks = snapshot.get("tasks", [])
+    active_deliveries = sum(1 for t in tasks if t.get("task_type") == "DELIVERY")
     
     return {
         "time": time_minutes,
@@ -488,6 +536,13 @@ def render_current_metrics(
         "parties_served": parties_served,
         "guest_queue": guest_queue,
         "expo_queue": expo_queue,
+        "food_runner_queue": food_runner_queue,
+        "dishes_cooking": dishes_cooking,
+        "dishes_ready": dishes_ready,
+        "dishes_delivered": dishes_delivered,
+        "total_dishes": total_dishes,
+        "station_utilization": station_util,
+        "active_deliveries": active_deliveries,
     }
 
 

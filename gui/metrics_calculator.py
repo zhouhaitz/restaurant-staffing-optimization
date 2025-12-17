@@ -464,20 +464,43 @@ def calculate_service_times(snapshots: List[Dict]) -> Dict[str, List[float]]:
     wait_times = []
     dining_times = []
     total_times = []
-    order_to_delivery_times = []
+    order_to_delivery_times = []  # Order complete to first dish delivered
+    kitchen_times = []  # Kitchen start to all dishes ready at expo
+    first_to_all_delivery_times = []  # First dish to all dishes delivered
+    seating_to_order_times = []  # Seated to ordering complete
     
     for party in parties:
         arrival = party.get("arrival_time")
         seated = party.get("table_assigned_time")
-        first_delivery = party.get("first_delivery_time")
-        departure = party.get("departure_time")
         ordering_start = party.get("ordering_start")
+        ordering_complete = party.get("ordering_complete")
+        kitchen_start = party.get("kitchen_start")
+        all_dishes_ready = party.get("all_dishes_ready")
+        first_delivery = party.get("first_delivery_time")
+        all_delivered = party.get("all_dishes_delivered")
         dining_start = party.get("dining_start")
         dining_complete = party.get("dining_complete")
+        departure = party.get("departure_time")
         
         # Wait time (arrival to seating)
         if arrival is not None and seated is not None:
             wait_times.append(seated - arrival)
+        
+        # Seating to order complete time
+        if seated is not None and ordering_complete is not None:
+            seating_to_order_times.append(ordering_complete - seated)
+        
+        # Kitchen time (order placed to all dishes ready at expo)
+        if kitchen_start is not None and all_dishes_ready is not None:
+            kitchen_times.append(all_dishes_ready - kitchen_start)
+        
+        # Order to first delivery time
+        if ordering_complete is not None and first_delivery is not None:
+            order_to_delivery_times.append(first_delivery - ordering_complete)
+        
+        # First dish to all dishes delivered
+        if first_delivery is not None and all_delivered is not None:
+            first_to_all_delivery_times.append(all_delivered - first_delivery)
         
         # Dining time
         if dining_start is not None and dining_complete is not None:
@@ -486,16 +509,15 @@ def calculate_service_times(snapshots: List[Dict]) -> Dict[str, List[float]]:
         # Total time (arrival to departure)
         if arrival is not None and departure is not None:
             total_times.append(departure - arrival)
-        
-        # Order to delivery time
-        if ordering_start is not None and first_delivery is not None:
-            order_to_delivery_times.append(first_delivery - ordering_start)
     
     return {
         "wait_times": wait_times,
+        "seating_to_order_times": seating_to_order_times,
+        "kitchen_times": kitchen_times,
+        "order_to_delivery_times": order_to_delivery_times,
+        "first_to_all_delivery_times": first_to_all_delivery_times,
         "dining_times": dining_times,
         "total_times": total_times,
-        "order_to_delivery_times": order_to_delivery_times,
     }
 
 
@@ -543,6 +565,14 @@ def calculate_summary_statistics(snapshots: List[Dict]) -> Dict[str, Any]:
     service_times = calculate_service_times(snapshots)
     avg_wait_time = np.mean(service_times.get("wait_times", [0])) if service_times.get("wait_times") else 0
     avg_total_time = np.mean(service_times.get("total_times", [0])) if service_times.get("total_times") else 0
+    avg_kitchen_time = np.mean(service_times.get("kitchen_times", [0])) if service_times.get("kitchen_times") else 0
+    avg_order_to_delivery = np.mean(service_times.get("order_to_delivery_times", [0])) if service_times.get("order_to_delivery_times") else 0
+    avg_dining_time = np.mean(service_times.get("dining_times", [0])) if service_times.get("dining_times") else 0
+    
+    # Count total dishes delivered
+    dishes = last_snapshot.get("dishes", [])
+    total_dishes = len(dishes)
+    dishes_delivered = sum(1 for d in dishes if d.get("status") == "delivered")
     
     return {
         "total_revenue": total_revenue,
@@ -556,6 +586,12 @@ def calculate_summary_statistics(snapshots: List[Dict]) -> Dict[str, Any]:
         "avg_table_utilization": avg_table_utilization,
         "avg_station_utilization": avg_station_utilization,
         "avg_wait_time": avg_wait_time,
+        "avg_kitchen_time": avg_kitchen_time,
+        "avg_order_to_delivery": avg_order_to_delivery,
+        "avg_dining_time": avg_dining_time,
         "avg_total_time": avg_total_time,
+        "total_dishes": total_dishes,
+        "dishes_delivered": dishes_delivered,
+        "dishes_per_hour": safe_divide(dishes_delivered, duration_hours, 0.0),
     }
 
