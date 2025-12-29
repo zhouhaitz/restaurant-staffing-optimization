@@ -240,3 +240,35 @@ def safe_divide(numerator: float, denominator: float, default: float = 0.0) -> f
     return numerator / denominator
 
 
+def extract_staff_config_from_metadata(metadata: Dict) -> Dict[str, int]:
+    """Extract staff configuration from simulation metadata.
+    
+    Args:
+        metadata: Metadata dictionary from log file
+        
+    Returns:
+        Dictionary with staff counts (num_servers, num_cooks, etc.)
+    """
+    staff_config = {}
+    
+    # Try to extract from metadata
+    if metadata:
+        staff_config['num_servers'] = metadata.get('num_servers', 0)
+        staff_config['num_cooks'] = metadata.get('num_cooks', 0)
+        staff_config['num_hosts'] = metadata.get('num_hosts', 0)
+        staff_config['num_food_runners'] = metadata.get('num_food_runners', 0)
+        staff_config['num_bussers'] = metadata.get('num_bussers', 0)
+    
+    # If not found in metadata, return defaults
+    if not any(staff_config.values()):
+        staff_config = {
+            'num_servers': 6,
+            'num_cooks': 9,
+            'num_hosts': 1,
+            'num_food_runners': 2,
+            'num_bussers': 0
+        }
+    
+    return staff_config
+
+

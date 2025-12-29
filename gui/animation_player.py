@@ -8,21 +8,21 @@ from typing import Dict, List, Optional, Any, Tuple
 import math
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
+import sys
+from pathlib import Path
+import importlib.util
 
-try:
-    from .utils import (
-        find_snapshot_index_at_time,
-        get_snapshot_at_time,
-        format_time_display,
-        safe_divide,
-    )
-except ImportError:
-    from utils import (
-        find_snapshot_index_at_time,
-        get_snapshot_at_time,
-        format_time_display,
-        safe_divide,
-    )
+# Load gui/utils.py explicitly to avoid conflict with experiments/utils.py
+gui_utils_path = Path(__file__).parent / "utils.py"
+spec = importlib.util.spec_from_file_location("gui_utils", gui_utils_path)
+gui_utils = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(gui_utils)
+
+# Import required functions
+find_snapshot_index_at_time = gui_utils.find_snapshot_index_at_time
+get_snapshot_at_time = gui_utils.get_snapshot_at_time
+format_time_display = gui_utils.format_time_display
+safe_divide = gui_utils.safe_divide
 
 
 # Status colors for visualization

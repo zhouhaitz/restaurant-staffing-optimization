@@ -10,25 +10,23 @@ This module calculates key performance metrics including:
 from typing import Dict, List, Optional, Any
 import pandas as pd
 import numpy as np
+import sys
+from pathlib import Path
+import importlib.util
 
-try:
-    from .utils import (
-        convert_minutes_to_hours,
-        get_total_seats_from_snapshots,
-        get_total_tables_from_snapshots,
-        count_occupied_tables,
-        safe_divide,
-        get_station_names,
-    )
-except ImportError:
-    from utils import (
-        convert_minutes_to_hours,
-        get_total_seats_from_snapshots,
-        get_total_tables_from_snapshots,
-        count_occupied_tables,
-        safe_divide,
-        get_station_names,
-    )
+# Load gui/utils.py explicitly to avoid conflict with experiments/utils.py
+gui_utils_path = Path(__file__).parent / "utils.py"
+spec = importlib.util.spec_from_file_location("gui_utils", gui_utils_path)
+gui_utils = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(gui_utils)
+
+# Import required functions from gui_utils
+convert_minutes_to_hours = gui_utils.convert_minutes_to_hours
+get_total_seats_from_snapshots = gui_utils.get_total_seats_from_snapshots
+get_total_tables_from_snapshots = gui_utils.get_total_tables_from_snapshots
+count_occupied_tables = gui_utils.count_occupied_tables
+safe_divide = gui_utils.safe_divide
+get_station_names = gui_utils.get_station_names
 
 
 def calculate_revpash(
@@ -594,4 +592,36 @@ def calculate_summary_statistics(snapshots: List[Dict]) -> Dict[str, Any]:
         "dishes_delivered": dishes_delivered,
         "dishes_per_hour": safe_divide(dishes_delivered, duration_hours, 0.0),
     }
+
+
+def calculate_percentile_times(service_times: Dict[str, List[float]], percentile: int = 95) -> Dict[str, float]:
+    """Calculate percentile service times for various metrics.
+    
+    Args:
+        service_times: Dictionary with lists of service times from calculate_service_times()
+        percentile: Percentile to calculate (default: 95)
+        
+    Returns:
+        Dictionary with percentile values for each time metric
+    """
+    percentiles = {}
+    
+    time_metrics = [
+        'wait_times',
+        'seating_to_order_times',
+        'kitchen_times',
+        'order_to_delivery_times',
+        'first_to_all_delivery_times',
+        'dining_times',
+        'total_times'
+    ]
+    
+    for metric in time_metrics:
+        times = service_times.get(metric, [])
+        if times and len(times) > 0:
+            percentiles[f'{metric}_p{percentile}'] = float(np.percentile(times, percentile))
+        else:
+            percentiles[f'{metric}_p{percentile}'] = 0.0
+    
+    return percentiles
 

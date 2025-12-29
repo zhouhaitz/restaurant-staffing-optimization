@@ -9,10 +9,16 @@ from typing import Dict, List, Tuple, Optional, Any, Union
 from pathlib import Path
 import io
 
-try:
-    from .utils import convert_hours_to_minutes
-except ImportError:
-    from utils import convert_hours_to_minutes
+import sys
+from pathlib import Path
+import importlib.util
+
+# Load gui/utils.py explicitly to avoid conflict with experiments/utils.py
+gui_utils_path = Path(__file__).parent / "utils.py"
+spec = importlib.util.spec_from_file_location("gui_utils", gui_utils_path)
+gui_utils = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(gui_utils)
+convert_hours_to_minutes = gui_utils.convert_hours_to_minutes
 
 
 class LogValidationError(Exception):

@@ -74,7 +74,19 @@ This project implements a full-service restaurant simulation model specifically 
    pip install -r requirements.txt
    ```
 
-4. **Run a simulation**
+4. **Configure OpenAI API key (for RAG chatbot)**
+   
+   Create a `.env` file in the project root:
+   ```bash
+   # .env
+   OPENAI_API_KEY=your_openai_api_key_here
+   ```
+   
+   Get your API key from: https://platform.openai.com/api-keys
+   
+   > **Note**: The RAG chatbot requires an OpenAI API key. If you don't have one, the rest of the simulation will still work.
+
+5. **Run a simulation**
    ```python
    from experiments.runner import run_single_dish_sim
    from experiments.dish_loading import load_recipes_from_json

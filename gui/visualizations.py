@@ -10,11 +10,19 @@ import numpy as np
 import plotly.graph_objects as go
 import plotly.express as px
 from plotly.subplots import make_subplots
+import sys
+from pathlib import Path
+import importlib.util
 
-try:
-    from .utils import format_time_display, get_station_names
-except ImportError:
-    from utils import format_time_display, get_station_names
+# Load gui/utils.py explicitly to avoid conflict with experiments/utils.py
+gui_utils_path = Path(__file__).parent / "utils.py"
+spec = importlib.util.spec_from_file_location("gui_utils", gui_utils_path)
+gui_utils = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(gui_utils)
+
+# Import required functions
+format_time_display = gui_utils.format_time_display
+get_station_names = gui_utils.get_station_names
 
 
 # Color palette for consistent styling
