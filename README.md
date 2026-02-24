@@ -20,7 +20,7 @@ This project implements a full-service restaurant simulation model specifically 
 
 - **📄 Project Report**: [`IEOR_174_Project (3).pdf`](IEOR_174_Project%20(3).pdf) - Complete project documentation, methodology, and results
 - **🎨 System Architecture Diagram**: [Miro Board](https://miro.com/app/board/uXjVJ07HKGQ=/) - Visual representation of simulation architecture and workflow
-- **📹 Video Demonstration**: See project report for dashboard demo link
+- **📹 Video Demonstration**: Demo Link to Try it out yourself: [demo link](https://restaurant-staffing-optimization.streamlit.app/)
 
 ## 📊 Key Results
 
