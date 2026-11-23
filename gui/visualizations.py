@@ -14,7 +14,7 @@ import sys
 from pathlib import Path
 import importlib.util
 
-# Load gui/utils.py explicitly to avoid conflict with experiments/utils.py
+# Load gui/utils.py explicitly to avoid conflict with engine/utils.py
 gui_utils_path = Path(__file__).parent / "utils.py"
 spec = importlib.util.spec_from_file_location("gui_utils", gui_utils_path)
 gui_utils = importlib.util.module_from_spec(spec)

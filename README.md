@@ -1,253 +1,92 @@
-# Restaurant Staffing Optimization Simulation
+# Restaurant Staffing Optimization
 
-**IEOR 174 Project - Comal Restaurant Analysis**
+**Discrete-event simulation of a busy Berkeley restaurant (Comal) to choose how many servers, cooks, hosts, food runners and bussers to schedule, using statistical selection to pick a winner with confidence.**
 
-A comprehensive discrete-event simulation framework for optimizing restaurant staffing configurations to maximize Net Revenue per Available Seat Hour (Net RevPASH).
+**[Live app](https://restaurant-staffing-optimization.streamlit.app/)** · [Project report (PDF)](docs/IEOR_174_Project_Report.pdf) · Built for IEOR 174 (Simulation), UC Berkeley
 
-## 🎯 Project Overview
+![Streamlit app: executive dashboard after one simulated dinner service](docs/app_screenshot.png)
 
-This project implements a full-service restaurant simulation model specifically configured for **Comal Restaurant** in Berkeley, CA. The simulation models the complete customer journey from arrival to departure, including:
+## The problem and the result
 
-- Non-homogeneous Poisson arrival process (dinner rush pattern)
-- Component-based cooking operations (5 specialized kitchen stations)
-- Multi-zone server allocation
-- Dual queue task management system
-- Comprehensive performance metrics
+Restaurant labor is the largest controllable cost, and the "right" crew is not obvious: a kitchen can look 70% utilized on average while one station (the wood grill) is saturated and stalls every table. I built a SimPy discrete-event model of a Friday dinner service (arrivals, host seating, server zones, five kitchen stations, food runners, bussing) with arrival rates fitted to about two months (Oct-Nov 2025) of the restaurant's real point-of-sale data. I then compared 36 staffing configurations on **net revenue per available seat-hour** (revenue minus labor cost, divided by seat-hours).
 
-**Primary Goal**: Optimize staffing levels (servers, cooks, hosts, food runners, bussers) to maximize Net RevPASH while maintaining service quality.
+**Result:** among the configurations tested, **5 servers, 9 cooks, 1 host, 1 food runner, 0 bussers** scored best at **$3.81 per seat-hour (95% CI $3.64-$3.99)**. Kitchen staffing dominated: with 8 cooks the grill station collapses and throughput stalls, while a 10th cook added cost without enough extra revenue.
 
-## 📎 Project Resources
+| Rank | Config (servers/cooks/hosts/runners/bussers) | Net RevPASH | 95% CI |
+|---|---|---|---|
+| 1 | 5 / 9 / 1 / 1 / 0 | $3.81 | [$3.64, $3.99] |
+| 2 | 5 / 9 / 1 / 2 / 0 | $3.46 | [$3.28, $3.63] |
+| 3 | 5 / 10 / 1 / 1 / 0 | $3.42 | [$3.21, $3.62] |
+| 4 | 6 / 9 / 1 / 1 / 0 | $3.33 | [$3.15, $3.51] |
+| 5 | 5 / 10 / 1 / 2 / 0 | $3.30 | [$3.11, $3.48] |
 
-- **📄 Project Report**: [`IEOR_174_Project (3).pdf`](IEOR_174_Project%20(3).pdf) - Complete project documentation, methodology, and results
-- **🎨 System Architecture Diagram**: [Miro Board](https://miro.com/app/board/uXjVJ07HKGQ=/) - Visual representation of simulation architecture and workflow
-- **📹 Video Demonstration**: Demo Link to Try it out yourself: [demo link](https://restaurant-staffing-optimization.streamlit.app/)
+Source: the project report, §5.1 ([notebook](notebooks/statistical_testing.ipynb) reproduces the workflow). The winner beat its nearest competitor (a second food runner) with a statistically significant margin; the gaps among ranks 2-5 were not all significant.
 
-## 📊 Key Results
+**Caveats, read these:** these are *simulated* results from a model, not measured outcomes in the restaurant. The model represents an average Friday dinner (5 PM onward) fitted from roughly two months of data, so seasonality, other days and special events are not captured. Net RevPASH counts labor only (no food cost, rent, or tips), only 36 combinations on a coarse grid were searched (servers 5-7, cooks 8-10, runners 1-2, bussers 0-1), and service times are modeled assumptions rather than measured. Treat the output as a ranking of options to test, not a staffing mandate.
 
-### Optimal Configuration
-- **5 Servers, 9 Cooks, 1 Host, 1 Food Runner, 0 Bussers**
-- **Net RevPASH**: $3.81/seat-hour (95% CI: [$3.64, $3.99])
-- **Statistical Validation**: Achieved 5% relative error with 21-87 replications per configuration
+## How it works
 
-### Top 5 Configurations
-1. S5_C9_H1_R1_B0: $3.814
-2. S5_C9_H1_R2_B0: $3.455
-3. S5_C10_H1_R1_B0: $3.419
-4. S6_C9_H1_R1_B0: $3.330
-5. S5_C10_H1_R2_B0: $3.296
-
-## 🏗️ Project Structure
-
-```
-.
-├── experiments/              # Core simulation code
-│   ├── simulation.py        # Main simulation engine (1408 lines)
-│   ├── models.py            # Data models (Party, Dish, Task, etc.)
-│   ├── parameters.py        # Configuration parameters
-│   ├── results.py           # Metrics calculation
-│   ├── statistical_testing.ipynb  # Statistical analysis framework
-│   ├── comal_recipes.json   # Restaurant menu & recipes
-│   └── ...
-├── gui/                     # Streamlit visualization dashboard
-├── discussions/             # Class discussion notebooks
-├── PROJECT_ANALYSIS_DOCUMENTATION.md  # Comprehensive project documentation
-├── PROJECT_STATUS_REPORT.md # Development status
-└── requirements.txt         # Python dependencies
+```mermaid
+flowchart LR
+    A[POS data<br/>orders, product mix, payroll<br/>private, not in repo] --> B[Input models<br/>NHPP arrival fit<br/>party-size and menu mix<br/>recipes, wages]
+    B --> C[Discrete-event simulation<br/>SimPy: host, servers,<br/>5 kitchen stations, runners]
+    C --> D[Policy selection<br/>pilot, screening,<br/>adaptive precision,<br/>pairwise CIs]
+    D --> E[Streamlit app<br/>run, inspect, compare]
+    C -.logs.-> F[Experimental RAG chat<br/>optional]
 ```
 
-## 🚀 Quick Start
+| Module | What it does |
+|---|---|
+| [`engine/`](engine) | Simulation engine: `simulation.py` (events/processes), `parameters.py`, `models.py`, `results.py`, `comal_recipes.json` (menu, recipes, prices) |
+| [`engine/selection.py`](engine/selection.py), [`statistical_validation.py`](engine/statistical_validation.py) | Statistics: pilot, subset selection, adaptive stopping, pairwise comparison, CRN pairs |
+| [`gui/`](gui) | Streamlit app (`streamlit_app.py` is the entrypoint) |
+| [`gui/rag/`](gui/rag) | **Experimental** LLM chat over simulation logs |
+| [`data/`](data) | Synthetic sample orders + how they were generated |
+| [`tests/`](tests) | Fast tests (engine, selection, CRN) |
+| [`notebooks/`](notebooks) | The analysis notebooks behind the report |
 
-### Prerequisites
-- Python 3.12+
-- pip
+## Methodology (plain English)
 
-### Installation
+- **Discrete-event simulation.** Time jumps from one event to the next (a party arrives, a dish finishes, a table is cleaned) instead of ticking every second. Each party walks through seating, ordering, cooking, eating, paying and bussing, competing for limited servers, cooks and tables. Arrivals follow a time-varying Poisson process (busy peak, quiet shoulders) fitted to real data.
+- **Pilot runs and an adaptive stopping rule.** Results are noisy, so each configuration is run many times. A 30-run pilot estimates the variance and the number of runs needed for a 5% relative confidence-interval width; the study then keeps adding replications until the 95% CI half-width is within 5% of the mean. Required runs ranged from 21 to 87 per configuration.
+- **Two-stage selection.** Stage one screens all 36 configurations with just 10 runs each and drops any whose Bonferroni-adjusted upper confidence bound falls below the current best (36 down to 11). Stage two spends the compute budget only on the survivors, to the 5% precision target.
+- **Common random numbers (CRN).** When comparing two configurations, running both on the *same* random seeds makes the same "bad luck" (a big party rush) hit both, so the difference is far less noisy.
 
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd "IEOR 174 proj"
-   ```
+## Results provenance
 
-2. **Create virtual environment**
-   ```bash
-   python -m venv restaurant_sim_env
-   source restaurant_sim_env/bin/activate  # On Windows: restaurant_sim_env\Scripts\activate
-   ```
+Numbers above come from the report and the executed notebook outputs; nothing was re-tuned for this README. The 36-configuration search, 10-run screen and 21-87-run precision study are as described in the report. If you re-run the notebook on your machine, expect values to differ slightly with different seeds.
 
-3. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
+## Run locally
 
-4. **Configure OpenAI API key (for RAG chatbot)**
-   
-   Create a `.env` file in the project root:
-   ```bash
-   # .env
-   OPENAI_API_KEY=your_openai_api_key_here
-   ```
-   
-   Get your API key from: https://platform.openai.com/api-keys
-   
-   > **Note**: The RAG chatbot requires an OpenAI API key. If you don't have one, the rest of the simulation will still work.
+```bash
+git clone https://github.com/zhouhaitz/restaurant-staffing-optimization.git
+cd restaurant-staffing-optimization
+python -m venv .venv && source .venv/bin/activate     # Python 3.12+
+pip install -r requirements.txt
+streamlit run streamlit_app.py
+```
 
-5. **Run a simulation**
-   ```python
-   from experiments.runner import run_single_dish_sim
-   from experiments.dish_loading import load_recipes_from_json
-   
-   params = load_recipes_from_json('experiments/comal_recipes.json')
-   results = run_single_dish_sim(params, verbose=True)
-   ```
-
-## 📈 Statistical Testing Workflow
-
-The `statistical_testing.ipynb` notebook provides a complete framework for:
-
-1. **Pilot Study**: Estimate variance with n=30 replications
-2. **Sample Size Estimation**: Calculate required n for 5% relative error
-3. **Configuration Screening**: Test all configs with n=10
-4. **Subset Selection**: Bonferroni-corrected screening to identify promising configs
-5. **Precision Study**: Iteratively refine promising configs to target precision
-6. **Pairwise Comparison**: Welch's t-test for statistical significance
-
-### Example Usage
+Run the simulator from Python:
 
 ```python
-from experiments.statistical_testing import *
-from experiments.dish_loading import load_recipes_from_json
+import sys; sys.path.insert(0, "engine")
+from dish_loading import load_recipes_from_json
+from runner import run_single_dish_sim
 
-# Load base parameters
-base_params = load_recipes_from_json('experiments/comal_recipes.json')
-
-# Generate configuration grid
-configs = generate_configuration_grid(
-    base_params=base_params,
-    server_range=[5, 6, 7],
-    cook_range=[8, 9, 10],
-    host_range=[1],
-    food_runner_range=[1, 2],
-    busser_range=[0, 1]
-)
-
-# Run screening
-screening_results = run_screening_parallel(configs, n_per_config=10)
-
-# Apply subset selection
-selection = subset_selection(screening_results)
-
-# Run precision study on promising configs
-final_results = {}
-for idx in selection['may_be_best']:
-    result = run_to_target_precision(
-        params=screening_results[idx]['config'],
-        pilot_samples=screening_results[idx]['samples'],
-        target_relative_error=0.05
-    )
-    final_results[idx] = result
+params = load_recipes_from_json("engine/comal_recipes.json")
+print(run_single_dish_sim(params)["net_revpash"])
 ```
 
-## 🔬 Key Features
+Tests and notebooks: `pip install -r requirements-dev.txt && pytest tests`.
 
-### Simulation Engine
-- **Discrete-event simulation** using SimPy
-- **10-stage customer journey**: Arrival → Seating → Ordering → Cooking → Expo → Delivery → Dining → Checkout → Cleanup → Departure
-- **Component-based cooking**: Dishes require parallel processing across multiple stations
-- **Dual queue system**: Tasks can be handled by specialists or servers (redundancy)
-- **Zone-based organization**: Tables and servers organized into zones
+## Data and privacy
 
-### Statistical Framework
-- **Two-stage pilot methodology**: Efficient sample size determination
-- **Bonferroni correction**: Controls family-wise error rate in multiple comparisons
-- **Welch's t-test**: Robust pairwise comparisons (unequal variances)
-- **Iterative precision**: Adapts sample size based on observed variance
-- **Comprehensive visualization**: Heatmaps, convergence plots, pairwise comparisons
+The raw POS and payroll exports are **not** in this repo. The app and simulator don't read them at runtime; they run from fitted parameters. `data/` has a synthetic sample and a description of how it was made: see [`data/README.md`](data/README.md).
 
-### Restaurant Model
-- **35 menu items** from Comal Restaurant
-- **5 kitchen stations**: Wood grill, salad, sauté, tortilla, guac
-- **Realistic pricing**: $5-$78 per dish
-- **NHPP arrivals**: Gaussian peak distribution (dinner rush)
-- **Lognormal service times**: Right-skewed distributions
+## Experimental: RAG chat assistant
 
-## 📚 Documentation
+A chat tab lets you ask questions about a simulation run (OpenAI `gpt-4o-mini` + in-memory ChromaDB over the run logs). **It was an experiment and is not reliably accurate**; always check numbers against the dashboards. It is optional and only enabled when you provide a key:
 
-- **`PROJECT_ANALYSIS_DOCUMENTATION.md`**: Comprehensive analysis covering:
-  - Statistical methods and assumptions
-  - Project development history
-  - Design decisions and trade-offs
-  - Challenges and solutions
-  - Results interpretation
-  - IEOR field context
-
-- **`PROJECT_STATUS_REPORT.md`**: Current development status and future work
-
-- **`QUICK_REFERENCE_GUIDE.md`**: Quick reference for key metrics and results
-
-## 🧪 Testing
-
-Run the main simulation:
 ```bash
-cd experiments
-python -c "from runner import run_single_dish_sim; from dish_loading import load_recipes_from_json; params = load_recipes_from_json('comal_recipes.json'); run_single_dish_sim(params, verbose=True)"
+cp .env.example .env     # then set OPENAI_API_KEY (or use Streamlit secrets in the cloud)
 ```
-
-## 📊 Key Metrics
-
-### Financial
-- **Net RevPASH**: (Revenue - Labor Cost) / (Seats × Hours) - Primary KPI
-- **Gross RevPASH**: Revenue / (Seats × Hours)
-- **Labor Cost %**: Labor / Revenue × 100%
-
-### Operational
-- **Service Rate**: Parties served / Parties arrived
-- **Table Turnover**: Parties served / (Tables × Hours)
-- **Utilization**: Server, cook, station utilization rates
-- **Wait Times**: Table wait, kitchen time, total time
-
-## 🛠️ Technology Stack
-
-- **SimPy 4.1+**: Discrete-event simulation engine
-- **NumPy 2.0+**: Numerical computations
-- **Pandas 2.0+**: Data analysis
-- **SciPy 1.10+**: Statistical functions
-- **Matplotlib 3.10+**: Visualization
-- **Seaborn**: Statistical visualization
-- **Streamlit**: Interactive dashboard (GUI)
-
-## 📝 Key Learnings
-
-1. **Kitchen capacity is the primary bottleneck** - Cook count more critical than server count
-2. **Diminishing returns appear quickly** - Optimal at 9 cooks, 10th cook adds cost without proportional benefit
-3. **Specialist roles have low ROI** - Food runners and bussers show minimal impact
-4. **Two-stage pilot essential** - Variance estimates guide efficient sample size allocation
-5. **Screening dramatically reduces cost** - 69% reduction in total simulation runs
-
-## 🔮 Future Work
-
-- Sensitivity analysis on arrival rates and service times
-- Scenario analysis (weekend vs weekday, special events)
-- Model validation with real restaurant data
-- Extended replications for final configurations
-- Customer abandonment modeling
-- Variable staffing by hour
-
-## 👥 Authors
-
-IEOR 174 Project - Restaurant Simulation Team
-
-## 📄 License
-
-This project is for academic purposes as part of IEOR 174 coursework.
-
-## 🙏 Acknowledgments
-
-- Comal Restaurant (Berkeley, CA) for menu data
-- IEOR 174 course instructors
-- SimPy development team
-
----
-
-**For detailed analysis and methodology, see `PROJECT_ANALYSIS_DOCUMENTATION.md`**
-

@@ -16,9 +16,9 @@ from concurrent.futures import ThreadPoolExecutor, Future
 import json
 import traceback
 
-# Add experiments directory to path
-experiments_path = Path(__file__).parent.parent / "experiments"
-sys.path.insert(0, str(experiments_path))
+# Add engine directory to path
+engine_path = Path(__file__).parent.parent / "engine"
+sys.path.insert(0, str(engine_path))
 
 from parameters import SingleDishParameters
 # Don't import simulation at module level - import it in the thread function
@@ -93,10 +93,10 @@ class SimulationRunner:
             Dictionary with log data structure
         """
         try:
-            # Ensure correct import path for experiments module
-            # Remove gui from path to prevent importing gui/utils instead of experiments/utils
-            experiments_path = Path(__file__).parent.parent / "experiments"
-            experiments_path_str = str(experiments_path)
+            # Ensure correct import path for engine module
+            # Remove gui from path to prevent importing gui/utils instead of engine/utils
+            engine_path = Path(__file__).parent.parent / "engine"
+            engine_path_str = str(engine_path)
             gui_path_str = str(Path(__file__).parent)
             
             # Temporarily remove gui from sys.path if present
@@ -105,12 +105,12 @@ class SimulationRunner:
                 sys.path.remove(gui_path_str)
                 gui_was_in_path = True
             
-            # Ensure experiments is first in path
-            if experiments_path_str not in sys.path:
-                sys.path.insert(0, experiments_path_str)
-            elif sys.path[0] != experiments_path_str:
-                sys.path.remove(experiments_path_str)
-                sys.path.insert(0, experiments_path_str)
+            # Ensure engine is first in path
+            if engine_path_str not in sys.path:
+                sys.path.insert(0, engine_path_str)
+            elif sys.path[0] != engine_path_str:
+                sys.path.remove(engine_path_str)
+                sys.path.insert(0, engine_path_str)
             
             # Clear cached utils module if it's the wrong one (from gui/)
             if 'utils' in sys.modules:

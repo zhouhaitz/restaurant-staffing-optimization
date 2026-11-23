@@ -8,6 +8,7 @@ Provides functions for:
 - Sequential sampling with adaptive stopping
 """
 import time
+from dataclasses import replace
 from typing import Dict, List, Tuple, Any, Optional
 import numpy as np
 from scipy import stats
@@ -269,33 +270,10 @@ def run_crn_paired(config_pair: Tuple[SingleDishParameters, SingleDishParameters
     """
     config_A, config_B = config_pair
     
-    # Create config copies with same parameters except for what we're comparing
-    config_A_list = []
-    config_B_list = []
-    
-    for rep in range(n_rep):
-        seed = base_seed + rep
-        
-        # Config A with this seed
-        config_A_rep = SingleDishParameters(
-            num_tables=config_A.num_tables,
-            num_servers=config_A.num_servers,
-            num_cooks=config_A.num_cooks,
-            simulation_duration=config_A.simulation_duration,
-            seed=seed
-        )
-        
-        # Config B with SAME seed (CRN)
-        config_B_rep = SingleDishParameters(
-            num_tables=config_B.num_tables,
-            num_servers=config_B.num_servers,
-            num_cooks=config_B.num_cooks,
-            simulation_duration=config_B.simulation_duration,
-            seed=seed  # Same seed = CRN
-        )
-        
-        config_A_list.append(config_A_rep)
-        config_B_list.append(config_B_rep)
+    # Copy each config with the shared per-replication seed. dataclasses.replace keeps every
+    # other field (recipes, menu mix, host/runner/busser counts), so only the seed changes.
+    config_A_list = [replace(config_A, seed=base_seed + rep) for rep in range(n_rep)]
+    config_B_list = [replace(config_B, seed=base_seed + rep) for rep in range(n_rep)]
     
     print(f"Running CRN paired comparison: {n_rep} replications")
     print(f"  Config A: {config_A.num_servers} servers, {config_A.num_cooks} cooks")

@@ -7,10 +7,8 @@ with support for OpenAI and local models.
 import os
 from typing import List
 from openai import OpenAI
-from dotenv import load_dotenv
 
-# Load environment variables from .env file
-load_dotenv()
+from secrets_util import get_openai_key
 
 
 class EmbeddingGenerator:
@@ -25,8 +23,8 @@ class EmbeddingGenerator:
         self.model = model
         self.client = None
         
-        # Load API key from environment (checks .env file via load_dotenv)
-        api_key = os.getenv("OPENAI_API_KEY")
+        # API key from environment / .env / st.secrets (never hard-coded)
+        api_key = get_openai_key()
         if api_key:
             self.client = OpenAI(api_key=api_key)
     
@@ -40,7 +38,7 @@ class EmbeddingGenerator:
             List of embedding vectors
         """
         if not self.client:
-            raise ValueError("OpenAI API key not found. Set OPENAI_API_KEY in .env file or environment variables.")
+            raise ValueError("OpenAI API key not found. Set OPENAI_API_KEY in .env, the environment, or Streamlit secrets.")
         
         if not texts:
             return []

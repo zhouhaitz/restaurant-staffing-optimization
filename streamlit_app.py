@@ -9,15 +9,15 @@ from pathlib import Path
 
 # Add project root and subdirectories to Python path
 project_root = Path(__file__).parent
-experiments_path = project_root / "experiments"
+engine_path = project_root / "engine"
 gui_path = project_root / "gui"
 
 # Add to sys.path (similar to what gui/app.py does)
-# CRITICAL: Add experiments directory to path FIRST, before any other imports
-# This ensures simulation.py finds experiments/utils.py (which has generate_party_size)
-if str(experiments_path) in sys.path:
-    sys.path.remove(str(experiments_path))
-sys.path.insert(0, str(experiments_path))
+# CRITICAL: Add engine directory to path FIRST, before any other imports
+# This ensures simulation.py finds engine/utils.py (which has generate_party_size)
+if str(engine_path) in sys.path:
+    sys.path.remove(str(engine_path))
+sys.path.insert(0, str(engine_path))
 
 # Also add gui directory for other imports
 if str(gui_path) not in sys.path:

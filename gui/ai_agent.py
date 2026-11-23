@@ -16,12 +16,10 @@ import sys
 gui_path = Path(__file__).parent
 sys.path.insert(0, str(gui_path))
 
-from dotenv import load_dotenv
+from secrets_util import get_openai_key
 import pandas as pd
 import numpy as np
 
-# Load environment variables
-load_dotenv()
 
 try:
     from openai import OpenAI
@@ -61,9 +59,9 @@ class SimulationAgent:
         self.metadata = data.get("metadata", {})
         
         # Load API key
-        api_key = os.getenv("OPENAI_API_KEY")
+        api_key = get_openai_key()
         if not api_key:
-            raise ValueError("OPENAI_API_KEY not found in environment variables")
+            raise ValueError("OPENAI_API_KEY not found (set it in .env, the environment, or Streamlit secrets)")
         
         self.client = OpenAI(api_key=api_key)
         self.model = "gpt-4o-mini"  # Cost-effective model
