@@ -7,14 +7,11 @@ to answer questions about the currently loaded simulation.
 import os
 from typing import Dict, Any, List, Optional
 from openai import OpenAI
-from dotenv import load_dotenv
+from secrets_util import get_openai_key
 import json
 
 from .vector_store import SimulationVectorStore
 from .fact_checker import FactChecker
-
-# Load environment variables from .env file
-load_dotenv()
 
 
 class RAGChatbot:
@@ -30,10 +27,10 @@ class RAGChatbot:
         self.vector_store = vector_store
         self.fact_checker = fact_checker
         
-        # Initialize OpenAI client (API key loaded from .env)
-        api_key = os.getenv("OPENAI_API_KEY")
+        # Initialize OpenAI client (key from environment / .env / st.secrets)
+        api_key = get_openai_key()
         if not api_key:
-            raise ValueError("OPENAI_API_KEY not found. Set it in .env file or environment variables.")
+            raise ValueError("OPENAI_API_KEY not found. Set it in .env, the environment, or Streamlit secrets.")
         
         self.client = OpenAI(api_key=api_key)
         self.model = "gpt-4o-mini"  # Cost-effective model

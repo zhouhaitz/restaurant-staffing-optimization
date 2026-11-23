@@ -14,12 +14,12 @@ import sys
 from pathlib import Path
 import importlib.util
 
-# CRITICAL: Add experiments directory to path FIRST, before any other imports
-# This ensures simulation.py finds experiments/utils.py (which has generate_party_size)
-experiments_path = Path(__file__).parent.parent / "experiments"
-if str(experiments_path) in sys.path:
-    sys.path.remove(str(experiments_path))
-sys.path.insert(0, str(experiments_path))
+# CRITICAL: Add engine directory to path FIRST, before any other imports
+# This ensures simulation.py finds engine/utils.py (which has generate_party_size)
+engine_path = Path(__file__).parent.parent / "engine"
+if str(engine_path) in sys.path:
+    sys.path.remove(str(engine_path))
+sys.path.insert(0, str(engine_path))
 
 # Also add gui directory for other imports
 gui_path = Path(__file__).parent
@@ -110,7 +110,7 @@ from animation_player import (
     render_current_metrics,
 )
 
-# Load gui/utils.py explicitly to avoid conflict with experiments/utils.py
+# Load gui/utils.py explicitly to avoid conflict with engine/utils.py
 gui_utils_path = gui_path / "utils.py"
 spec = importlib.util.spec_from_file_location("gui_utils", gui_utils_path)
 gui_utils = importlib.util.module_from_spec(spec)
@@ -219,7 +219,7 @@ def main():
             "⚙️ Utilization",
             "🎬 Animation",
             "📋 Performance Summary",
-            "💬 Chat Assistant"
+            "💬 Chat Assistant (experimental)"
         ])
     elif EXECUTIVE_DASHBOARD_AVAILABLE:
         tab0, tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
@@ -239,7 +239,7 @@ def main():
             "⚙️ Utilization",
             "🎬 Animation",
             "📋 Performance Summary",
-            "💬 Chat Assistant"
+            "💬 Chat Assistant (experimental)"
         ])
     else:
         tab0, tab1, tab2, tab3, tab4, tab5 = st.tabs([

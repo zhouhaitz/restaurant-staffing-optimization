@@ -14,8 +14,8 @@ try:
 except ImportError:
     import sys
     from pathlib import Path
-    experiments_path = Path(__file__).parent.parent / "experiments"
-    sys.path.insert(0, str(experiments_path))
+    engine_path = Path(__file__).parent.parent / "engine"
+    sys.path.insert(0, str(engine_path))
     from parameters import SingleDishParameters
 
 

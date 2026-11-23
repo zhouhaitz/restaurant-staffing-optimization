@@ -10,12 +10,12 @@ from pathlib import Path
 from typing import Dict, Any, Optional, Callable
 import time
 
-# Add experiments directory to path FIRST (before gui imports)
+# Add engine directory to path FIRST (before gui imports)
 # This ensures simulation.py imports the correct utils module
-experiments_path = Path(__file__).parent.parent / "experiments"
-if str(experiments_path) in sys.path:
-    sys.path.remove(str(experiments_path))
-sys.path.insert(0, str(experiments_path))
+engine_path = Path(__file__).parent.parent / "engine"
+if str(engine_path) in sys.path:
+    sys.path.remove(str(engine_path))
+sys.path.insert(0, str(engine_path))
 
 from parameters import SingleDishParameters
 from simulation import RestaurantSimulation

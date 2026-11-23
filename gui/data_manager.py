@@ -13,9 +13,9 @@ from typing import Dict, List, Optional
 from datetime import datetime
 import sys
 
-# Add experiments directory to path
-experiments_path = Path(__file__).parent.parent / "experiments"
-sys.path.insert(0, str(experiments_path))
+# Add engine directory to path
+engine_path = Path(__file__).parent.parent / "engine"
+sys.path.insert(0, str(engine_path))
 
 from parameters import SingleDishParameters
 from metrics_calculator import calculate_summary_statistics
@@ -82,7 +82,7 @@ def load_simulation_config(filepath: str, base_params: Optional[SingleDishParame
         # If base_params not provided, need to load from default
         if base_params is None:
             from dish_loading import load_recipes_from_json
-            base_config_path = Path(__file__).parent.parent / "experiments" / "comal_recipes.json"
+            base_config_path = Path(__file__).parent.parent / "engine" / "comal_recipes.json"
             base_params = load_recipes_from_json(str(base_config_path))
         
         # Create new parameters with loaded config

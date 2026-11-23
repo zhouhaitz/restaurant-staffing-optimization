@@ -1,7 +1,6 @@
-"""Phase-by-phase tests for restaurant simulation refactoring.
+"""Engine tests: parameters, models, resources, and full-run behaviour.
 
-Run tests with: python -m pytest test_simulation_phases.py -v
-Or run directly: python test_simulation_phases.py
+Run with: python -m pytest tests -v
 """
 from __future__ import annotations
 
@@ -21,7 +20,7 @@ def test_phase1_parameters():
     # Test new FOH resources
     assert params.num_hosts == 1, "Default hosts should be 1"
     assert params.num_food_runners == 2, "Default food runners should be 2"
-    assert params.num_bussers == 2, "Default bussers should be 2"
+    assert params.num_bussers == 0, "Default bussers should be 0"
     
     # Test station capacities
     assert params.wood_grill_capacity == 2

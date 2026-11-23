@@ -15,7 +15,7 @@ import time
 gui_path = Path(__file__).parent
 sys.path.insert(0, str(gui_path))
 
-# Load gui/utils.py explicitly to avoid conflict with experiments/utils.py
+# Load gui/utils.py explicitly to avoid conflict with engine/utils.py
 gui_utils_path = gui_path / "utils.py"
 spec = importlib.util.spec_from_file_location("gui_utils", gui_utils_path)
 gui_utils = importlib.util.module_from_spec(spec)
@@ -46,6 +46,12 @@ get_total_tables_from_snapshots = gui_utils.get_total_tables_from_snapshots
 
 def render_chatbot_tab():
     """Render the main chatbot interface tab."""
+    st.warning(
+        "**Experimental.** This assistant is an LLM + retrieval experiment over the simulation "
+        "logs. It can be wrong or imprecise: verify any number against the dashboards. "
+        "Requires an OpenAI API key.",
+        icon="🧪",
+    )
     # Check if simulation is loaded
     if 'data' not in st.session_state or st.session_state.data is None:
         st.info("👈 Please load a simulation to start asking questions.")

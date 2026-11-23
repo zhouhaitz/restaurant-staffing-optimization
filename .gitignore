@@ -1,67 +1,43 @@
+# Secrets - never commit
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+*.pem
+*.key
+
+# Private / raw data (only the synthetic sample in data/ is tracked)
+raw_data/
+private_data/
+OrderDetails*.csv
+PayrollExport*.csv
+Product*Mix*.csv
+
 # Python
 __pycache__/
 *.py[cod]
-*$py.class
-*.so
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
 *.egg-info/
-.installed.cfg
-*.egg
-
-# Virtual Environment
-restaurant_sim_env/
-venv/
-ENV/
-env/
-.venv
-
-# Jupyter Notebook
-.ipynb_checkpoints
-*.ipynb_checkpoints
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-.DS_Store
-
-# Logs
-*.log
-logs/
-experiments/logs/
-
-# Data files (uncomment if you want to exclude large CSVs)
-# *.csv
-# *.json
-
-# Large binary files
-*.pdf
-*.html
-
-# Environment variables
-.env
-.env.local
-
-# OS
-Thumbs.db
-.DS_Store
-
-# Project specific
-*.pyc
+build/
+dist/
 .pytest_cache/
 .coverage
 htmlcov/
+
+# Virtual environments
+venv/
+.venv/
+env/
+restaurant_sim_env/
+
+# Notebooks / IDE / OS
+.ipynb_checkpoints/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# App runtime artifacts
+logs/
+gui/saved_configs/
+gui/temp_arrival_data.csv
+chroma_db/
